@@ -58,5 +58,3 @@ Thumbs.db
 webpack/.webpack_cache/
 stats.json
 dist.zip
-
-package-lock.json

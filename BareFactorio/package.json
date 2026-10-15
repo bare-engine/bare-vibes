@@ -12,7 +12,7 @@
         "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
         "sprites": "node tools/generateSprites.cjs",
         "sim-bench": "esbuild tools/simBench.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/simBench.mjs && node node_modules/.cache/simBench.mjs",
-        "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+        "update-engine": "npm update bare-engine"
     },
     "author": "Jeroen Wimmers",
     "license": "MIT",
@@ -21,7 +21,7 @@
         "vite": "^6.3.5"
     },
     "dependencies": {
-        "bare-engine": "github:bare-engine/bare-engine#semver:^0.6.0"
+        "bare-engine": "^1.0.0"
     },
     "bareEngine": {
         "gameId": "daee9113-1336-4f97-80d4-a4768990b215"

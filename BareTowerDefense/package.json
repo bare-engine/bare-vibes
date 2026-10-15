@@ -10,7 +10,7 @@
         "build-nolog": "vite build --config vite.config.cjs --mode production",
         "analyze": "bare-engine-analyze",
         "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
-        "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+        "update-engine": "npm update bare-engine"
     },
     "author": "Jeroen Wimmers",
     "license": "MIT",
@@ -19,7 +19,7 @@
         "vite": "^6.3.5"
     },
     "dependencies": {
-        "bare-engine": "file:../BareEngine"
+        "bare-engine": "^1.0.0"
     },
     "bareEngine": {
         "gameId": "fb341f46-28d7-4716-b777-1252963b2fe0",

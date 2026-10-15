@@ -18,7 +18,7 @@
         "vite": "^6.3.5"
     },
     "dependencies": {
-        "bare-engine": "github:BareEngine/BareEngine"
+        "bare-engine": "^1.0.0"
     },
     "bareEngine": {
         "gameId": "5e12457d-4396-4133-b24e-7df2e6c6da47"

@@ -29,7 +29,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -37,22 +37,26 @@ jobs:
         id: games
         shell: bash
         run: |
-          all=$(for d in */; do d=${d%/}; [ -f "$d/package.json" ] && echo "$d"; done)
+          all=""
+          for d in */; do
+            d=${d%/}
+            if [ -f "$d/package.json" ]; then all="$all $d"; fi
+          done
 
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             games="${{ github.event.inputs.games }}"
-            [ -z "$games" ] && games="$all"
+            if [ -z "$games" ]; then games="$all"; fi
           else
             before="${{ github.event.before }}"
             if [ -z "$before" ] || ! git cat-file -e "$before^{commit}" 2>/dev/null; then
               # New branch or force push: no usable base, build everything.
               games="$all"
             else
-              games=$(git diff --name-only "$before" "${{ github.sha }}" \
-                | grep -v '/dist/' \
-                | cut -d/ -f1 \
-                | sort -u \
-                | while read -r d; do echo "$all" | grep -qx "$d" && echo "$d"; done)
+              changed=$(git diff --name-only "$before" "${{ github.sha }}" | grep -v '/dist/' | cut -d/ -f1 | sort -u || true)
+              games=""
+              for d in $changed; do
+                if [ -f "$d/package.json" ]; then games="$games $d"; fi
+              done
             fi
           fi
 
@@ -60,7 +64,7 @@ jobs:
           echo "Games to build: ${games:-none}"
           echo "list=$games" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: steps.games.outputs.list != ''
         with:
           node-version: 22

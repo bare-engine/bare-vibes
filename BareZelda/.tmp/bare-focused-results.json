@@ -1,0 +1,91 @@
+[
+  {
+    "name": "BareMemory",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 85.26666669050853
+    },
+    "checks": {
+      "raceCleanup": true,
+      "completionStopped": true
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareVamireSurvivors",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "Hud",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1209.4666668574016
+    },
+    "checks": {
+      "stopped": true,
+      "cancelled": true,
+      "restored": true
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "GMTK2026",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "GoalsScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 378.63333328564966
+    },
+    "checks": {
+      "pausedPollHeld": true,
+      "resumed": true,
+      "cancelledBeforeReveal": true
+    },
+    "errors": [],
+    "passed": true
+  }
+]

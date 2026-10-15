@@ -1,0 +1,84 @@
+{
+ "name": "s05",
+ "dimensions": {
+  "width": 640,
+  "height": 192
+ },
+ "backgroundColor": "#1a0b10",
+ "customData": {
+  "room": "s05"
+ },
+ "entitiesByLayer": {
+  "background": [
+   {
+    "extends": "backWall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 12
+    },
+    "color": "#3a1c27"
+   }
+  ],
+  "objects": [
+   {
+    "extends": "boss",
+    "position": {
+     "x": 480,
+     "y": 176
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 1
+    },
+    "color": "#eba0ad"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#eba0ad"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 624,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 10
+    },
+    "color": "#eba0ad"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 176
+    },
+    "scale": {
+     "x": 40,
+     "y": 1
+    },
+    "color": "#eba0ad"
+   }
+  ]
+ }
+}

@@ -1,0 +1,136 @@
+{
+  "name": "level4",
+  "dimensions": {
+    "width": 640,
+    "height": 480
+  },
+  "customData": {
+    "title": "Tiimmbbeerr!",
+    "author": "Gaz",
+    "par": 2,
+    "background": "bg/n",
+    "originalLevel": 4
+  },
+  "entitiesByLayer": {
+    "objects": [
+      {
+        "extends": "r_fsave",
+        "position": {
+          "x": 400,
+          "y": 439
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.125
+        }
+      },
+      {
+        "extends": "r_fsave",
+        "position": {
+          "x": 464,
+          "y": 378
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.125
+        },
+        "rotation": 90
+      },
+      {
+        "extends": "r_fkill",
+        "position": {
+          "x": 151,
+          "y": 443
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.125
+        }
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 186,
+          "y": 404
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 116,
+          "y": 403
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 150,
+          "y": 354
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 151,
+          "y": 304
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 152,
+          "y": 252
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 152,
+          "y": 202
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_save",
+        "position": {
+          "x": 152,
+          "y": 149
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      }
+    ]
+  }
+}

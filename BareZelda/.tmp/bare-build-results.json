@@ -1,0 +1,80 @@
+[
+  {
+    "name": "BareDemosCollection\\bare-rpg",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "code": 1,
+    "out": "\n> template-bare@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\n[bare] Generated bareEngine.gameId \"e124d4ec-90eb-4677-9d27-23f73933bb94\" and saved it to package.json.\nvite v6.4.2 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/texturePackImages\n✔ AssetPack Completed in 660ms\nGenerated assets.ts (144 images, 0 sounds, 0 fonts, 5 levels, 0 prefabs, 0 base prefabs, 0 animations, 2 layers)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/node_modules/.bare-engine/stripTexturePackImages/input/texturePackImages\n✔ AssetPack Completed in 171ms\n[assets] stripTexturePackImages kept 24/140 images (116 removed).\ntransforming...\n✓ 19 modules transformed.\n✗ Build failed in 2.79s\nerror during build:\nCould not resolve \"../../../BareEngine/src/types/bareTypes\" from \"src/components/enemyAIComponent.ts\"\nfile: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/src/components/enemyAIComponent.ts\n    at getRollupError (file:///C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/node_modules/rollup/dist/es/shared/parseAst.js:406:41)\n    at error (file:///C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/node_modules/rollup/dist/es/shared/parseAst.js:402:42)\n    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/node_modules/rollup/dist/es/shared/node-entry.js:22126:24)\n    at file:///C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-rpg/node_modules/rollup/dist/es/shared/node-entry.js:22086:26\n"
+  },
+  {
+    "name": "BareDemosCollection\\bare-platformer",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-platformer",
+    "code": 0,
+    "out": "\n> Bare Game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\n[bare] Generated bareEngine.gameId \"afe1916e-2821-4b3a-bc82-3e74e5b7e7f4\" and saved it to package.json.\nvite v6.4.2 building for production...\n[assets] texturePackImages folder not found: C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-platformer\\texturePackImages\nGenerated assets.ts (25 images, 3 sounds, 1 fonts, 1 levels, 0 prefabs, 0 base prefabs, 5 animations, 2 layers)\ntransforming...\n✓ 114 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      13.76 kB │ gzip:  3.92 kB\ndist/bundle.min.js  228.29 kB │ gzip: 67.09 kB\n✓ built in 6.78s\n"
+  },
+  {
+    "name": "BareDemosCollection\\bare-shmup",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-shmup",
+    "code": 0,
+    "out": "\n> template-bare@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\n[bare] Generated bareEngine.gameId \"e83cd75d-8883-4b2e-85a2-a2865fc92e2a\" and saved it to package.json.\nvite v6.4.2 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareDemosCollection/bare-shmup/texturePackImages\n✔ AssetPack Completed in 731ms\nGenerated assets.ts (144 images, 0 sounds, 0 fonts, 0 levels, 0 prefabs, 0 base prefabs, 1 animations, 5 layers)\ntransforming...\n✓ 113 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.15 kB │ gzip:  3.99 kB\ndist/bundle.min.js  194.82 kB │ gzip: 57.07 kB\n✓ built in 7.70s\n"
+  },
+  {
+    "name": "BareJumper",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareJumper",
+    "code": 0,
+    "out": "\n> bare-game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareJumper/texturePackImages\n✔ AssetPack Completed in 81ms\ntransforming...\n✓ 118 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.14 kB │ gzip:  4.00 kB\ndist/bundle.min.js  264.57 kB │ gzip: 76.92 kB\n✓ built in 7.43s\n"
+  },
+  {
+    "name": "BareMetroidvania",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "code": 0,
+    "out": "\n> bare-metroidvania@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareMetroidvania/texturePackImages\n✔ AssetPack Completed in 656ms\ntransforming...\n✓ 123 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.13 kB │ gzip:  4.00 kB\ndist/bundle.min.js  274.99 kB │ gzip: 79.90 kB\n✓ built in 8.40s\n"
+  },
+  {
+    "name": "BareMemory",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMemory",
+    "code": 0,
+    "out": "\n> Bare Memory@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareMemory/texturePackImages\n✔ AssetPack Completed in 5.11s\ntransforming...\nnode_modules/web-haptics/dist/index.mjs (1:0): Module level directives cause errors when bundled, \"use client\" in \"node_modules/web-haptics/dist/index.mjs\" was ignored.\nnode_modules/web-haptics/dist/chunk-4NSAIXAB.mjs (1:0): Module level directives cause errors when bundled, \"use client\" in \"node_modules/web-haptics/dist/chunk-4NSAIXAB.mjs\" was ignored.\n✓ 121 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.18 kB │ gzip:  4.01 kB\ndist/bundle.min.js  251.36 kB │ gzip: 73.58 kB\n✓ built in 12.81s\n"
+  },
+  {
+    "name": "BarePlatformer",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BarePlatformer",
+    "code": 0,
+    "out": "\n> Bare Game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] texturePackImages folder not found: C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BarePlatformer\\texturePackImages\ntransforming...\n✓ 114 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      13.72 kB │ gzip:  3.89 kB\ndist/bundle.min.js  231.73 kB │ gzip: 68.13 kB\n✓ built in 7.05s\n"
+  },
+  {
+    "name": "BareShmup",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareShmup",
+    "code": 0,
+    "out": "\n> template-bare@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareShmup/texturePackImages\n✔ AssetPack Completed in 651ms\ntransforming...\n✓ 113 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.10 kB │ gzip:  3.96 kB\ndist/bundle.min.js  195.21 kB │ gzip: 57.18 kB\n✓ built in 8.27s\n"
+  },
+  {
+    "name": "BareTrust",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTrust",
+    "code": 0,
+    "out": "\n> Bare Game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareTrust/texturePackImages\n✔ AssetPack Completed in 1.16s\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareTrust/node_modules/.bare-engine/stripTexturePackImages/input/texturePackImages\n✔ AssetPack Completed in 457ms\n[assets] stripTexturePackImages kept 18/33 images (15 removed).\ntransforming...\n✓ 108 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.10 kB │ gzip:  3.97 kB\ndist/bundle.min.js  178.74 kB │ gzip: 51.91 kB\n✓ built in 9.35s\n"
+  },
+  {
+    "name": "BareVamireSurvivors",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareVamireSurvivors",
+    "code": 0,
+    "out": "\n> bare-game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/BareVamireSurvivors/texturePackImages\n✔ AssetPack Completed in 269ms\ntransforming...\n✓ 129 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.15 kB │ gzip:  3.99 kB\ndist/bundle.min.js  272.55 kB │ gzip: 79.64 kB\n✓ built in 8.86s\n"
+  },
+  {
+    "name": "GMTK2026",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "code": 0,
+    "out": "\n> Life Choices@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/GMTK2026/texturePackImages\n✔ AssetPack Completed in 1.46s\ntransforming...\n✓ 121 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/assets/weekAreaPhysics.worker-DiH3ovNl.js    4.29 kB\ndist/index.html                                  14.15 kB │ gzip:  3.99 kB\ndist/bundle.min.js                              276.55 kB │ gzip: 81.08 kB\n✓ built in 9.69s\n"
+  },
+  {
+    "name": "PrisonersDilemma",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PrisonersDilemma",
+    "code": 0,
+    "out": "\n> Bare Game@1.2.1 build\n> vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/PrisonersDilemma/texturePackImages\n✔ AssetPack Completed in 1.17s\nGenerated assets.ts (33 images, 0 sounds, 0 fonts, 1 levels, 3 prefabs, 0 base prefabs, 0 animations, 1 layers)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/PrisonersDilemma/node_modules/.bare-engine/stripTexturePackImages/input/texturePackImages\n✔ AssetPack Completed in 487ms\n[assets] stripTexturePackImages kept 18/33 images (15 removed).\ntransforming...\n✓ 108 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.10 kB │ gzip:  3.96 kB\ndist/bundle.min.js  179.16 kB │ gzip: 52.12 kB\n✓ built in 8.75s\n"
+  },
+  {
+    "name": "emojiWorld",
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "code": 0,
+    "out": "\n> template-bare@1.2.1 build\n> node log.js build && vite build --config vite.config.cjs --mode production\n\nvite v6.4.4 building for production...\n[assets] Running C:\\Program Files\\nodejs\\node.exe C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareEngine\\scripts\\buildAssets.cjs --no-generate (build)\n✔ AssetPack Initialized\n› Building: C:/Users/default.DESKTOP-FF34UB7/Documents/Programming/JS/emojiWorld/texturePackImages\n✔ AssetPack Completed in 9.10s\nGenerated assets.ts (1564 images, 492 sounds, 2 fonts, 60 levels, 80 prefabs, 6 base prefabs, 0 animations, 13 layers)\ntransforming...\n✓ 169 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html      14.56 kB │ gzip:   4.01 kB\ndist/bundle.min.js  572.81 kB │ gzip: 160.29 kB\n\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n✓ built in 24.39s\n"
+  }
+]

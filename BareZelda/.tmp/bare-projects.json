@@ -1,0 +1,499 @@
+[
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareArcadePhysics",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "generate:layers": "node webpack/generate-layers.js",
+      "generate:layers:watch": "node webpack/generate-layers.js --watch",
+      "dev": "webpack-dev-server --config webpack/config.dev.js",
+      "dev:open": "webpack-dev-server --config webpack/config.dev.js --open",
+      "build": "webpack --config webpack/config.prod.js",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "webpack-dev-server --config webpack/config.dev.js --open",
+      "build-nolog": "npm run generate:layers && webpack --config webpack/config.prod.js",
+      "analyze": "webpack --config webpack/config.prod.js --env analyze --json=stats.json && webpack-bundle-analyzer stats.json",
+      "poki-upload": "poki upload",
+      "build:assets": "assetpack --config assetpack.config.mjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareAtlasRotation",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareBenchmarks",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "start": "npm run build && npm run preview",
+      "build": "node scripts/build.mjs",
+      "bench": "node scripts/bench.mjs",
+      "preview": "node scripts/serve.mjs",
+      "dev": "vite --config vite.dashboard.config.mjs --open",
+      "dev:bare": "cd benchmarks/startup/bare && vite --mode development",
+      "dev:bare:render": "cd benchmarks/render/bare && vite --mode development",
+      "typecheck": "tsc --noEmit"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemos",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-platformer",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-shmup",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareFactorio",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "sprites": "node tools/generateSprites.cjs",
+      "sim-bench": "esbuild tools/simBench.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/simBench.mjs && node node_modules/.cache/simBench.mjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareGolf",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareJumper",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMemory",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.1",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm uninstall bare-engine && npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0 && npm pkg set dependencies.bare-engine=github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMonopoly",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BarePlatformer",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareRedRemover",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareResolutionDemo",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareRPG",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareShmup",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareSnake",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareSokoban",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTemplate",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm uninstall bare-engine && npm install \"bare-engine@github:bare-engine/bare-engine#semver:^0.6.0\" && npm pkg set \"dependencies.bare-engine=github:bare-engine/bare-engine#semver:^0.6.0\""
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTest",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "webpack-dev-server --config webpack.config.js --mode development",
+      "dev:open": "webpack-dev-server --config webpack.config.js --mode development --open",
+      "build": "webpack --config webpack.config.js --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "webpack-dev-server --config webpack.config.js --mode development --open",
+      "build-nolog": "webpack --config webpack.config.js --mode production",
+      "analyze": "webpack --config webpack.config.js --mode production --env analyze --json=stats.json && webpack-bundle-analyzer stats.json",
+      "poki-upload": "poki upload",
+      "build:assets": "assetpack --config assetpack.config.mjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTetris",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTowerDefense",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTrust",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareVamireSurvivors",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareWaldo",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareWebsterado",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "build:art": "node tools/art.cjs",
+      "build:maps": "node tools/maps.cjs",
+      "build:sfx": "node tools/sfx.cjs",
+      "update-engine": "npm uninstall bare-engine && npm install \"bare-engine@github:bare-engine/bare-engine#semver:^0.6.0\" && npm pkg set \"dependencies.bare-engine=github:bare-engine/bare-engine#semver:^0.6.0\""
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "node log.js dev && vite --config vite.config.cjs --mode development",
+      "dev:open": "node log.js dev && vite --config vite.config.cjs --mode development --open",
+      "build": "node log.js build && vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PokiGameJam\\HideAndSeek",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "preview": "vite preview --config vite.config.cjs --host 0.0.0.0 --port 5181",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PrisonersDilemma",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    }
+  }
+]

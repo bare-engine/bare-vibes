@@ -1,0 +1,41 @@
+{
+    "name": "bare-game",
+    "version": "1.2.1",
+    "scripts": {
+        "dev": "vite --config vite.config.cjs --mode development",
+        "dev:open": "vite --config vite.config.cjs --mode development --open",
+        "build": "vite build --config vite.config.cjs --mode production",
+        "build-zip": "npm run build && bare-engine-zip",
+        "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+        "build-nolog": "vite build --config vite.config.cjs --mode production",
+        "analyze": "bare-engine-analyze",
+        "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+        "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    },
+    "author": "Jeroen Wimmers",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "6.0.3",
+        "vite": "^6.3.5"
+    },
+    "dependencies": {
+        "bare-engine": "file:../BareEngine"
+    },
+    "bareEngine": {
+        "gameId": "fb341f46-28d7-4716-b777-1252963b2fe0",
+        "name": "Tower Defense",
+        "index": {
+            "backgroundColor": "#14161f",
+            "textColor": "#ffffff"
+        },
+        "stripGeneratedAssets": true,
+        "texturePackImages": {
+            "stripUnused": true
+        }
+    },
+    "allowScripts": {
+        "esbuild": true,
+        "sharp": true,
+        "vue-demi": true
+    }
+}

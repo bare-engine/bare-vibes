@@ -1,0 +1,167 @@
+{
+ "name": "c08",
+ "dimensions": {
+  "width": 640,
+  "height": 192
+ },
+ "backgroundColor": "#1c1215",
+ "customData": {
+  "room": "c08"
+ },
+ "entitiesByLayer": {
+  "background": [
+   {
+    "extends": "backWall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 12
+    },
+    "color": "#3a272c"
+   },
+   {
+    "extends": "torch",
+    "position": {
+     "x": 176,
+     "y": 112
+    }
+   },
+   {
+    "extends": "torch",
+    "position": {
+     "x": 480,
+     "y": 96
+    }
+   },
+   {
+    "extends": "torch",
+    "position": {
+     "x": 400,
+     "y": 48
+    }
+   },
+   {
+    "extends": "window",
+    "position": {
+     "x": 464,
+     "y": 80
+    }
+   }
+  ],
+  "objects": [
+   {
+    "extends": "rat",
+    "position": {
+     "x": 104,
+     "y": 176
+    }
+   },
+   {
+    "extends": "rat",
+    "position": {
+     "x": 152,
+     "y": 176
+    }
+   },
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 568,
+     "y": 72
+    }
+   },
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 536,
+     "y": 104
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 624,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 192,
+     "y": 80
+    },
+    "scale": {
+     "x": 4,
+     "y": 1
+    }
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 368,
+     "y": 80
+    },
+    "scale": {
+     "x": 3,
+     "y": 1
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 464,
+     "y": 160
+    },
+    "scale": {
+     "x": 2,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 176
+    },
+    "scale": {
+     "x": 40,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   }
+  ]
+ }
+}

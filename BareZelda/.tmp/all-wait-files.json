@@ -1,0 +1,224 @@
+[
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-platformer",
+    "file": "src\\game.ts",
+    "relative": "BareDemosCollection\\bare-platformer\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-platformer\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\gameOver.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\gameOver.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\gameOver.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\game.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\components\\aliveComponent.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\components\\aliveComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\components\\aliveComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\components\\enemyAIComponent.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\components\\enemyAIComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\components\\enemyAIComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\objects\\weapon.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\objects\\weapon.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\objects\\weapon.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "file": "src\\components\\playerComponents.ts",
+    "relative": "BareDemosCollection\\bare-rpg\\src\\components\\playerComponents.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-rpg\\src\\components\\playerComponents.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-shmup",
+    "file": "src\\game.ts",
+    "relative": "BareDemosCollection\\bare-shmup\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-shmup\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-shmup",
+    "file": "src\\components\\aliveComponent.ts",
+    "relative": "BareDemosCollection\\bare-shmup\\src\\components\\aliveComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareDemosCollection\\bare-shmup\\src\\components\\aliveComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareJumper",
+    "file": "src\\components\\orbComponent.ts",
+    "relative": "BareJumper\\src\\components\\orbComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareJumper\\src\\components\\orbComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareJumper",
+    "file": "src\\scenes\\runScene.ts",
+    "relative": "BareJumper\\src\\scenes\\runScene.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareJumper\\src\\scenes\\runScene.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMemory",
+    "file": "src\\game.ts",
+    "relative": "BareMemory\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMemory\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMemory",
+    "file": "src\\menu.ts",
+    "relative": "BareMemory\\src\\menu.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMemory\\src\\menu.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "file": "src\\game.ts",
+    "relative": "BareMetroidvania\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMetroidvania\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "file": "src\\components\\crackedComponent.ts",
+    "relative": "BareMetroidvania\\src\\components\\crackedComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMetroidvania\\src\\components\\crackedComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "file": "src\\components\\playerComponent.ts",
+    "relative": "BareMetroidvania\\src\\components\\playerComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMetroidvania\\src\\components\\playerComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "file": "src\\components\\enemyComponent.ts",
+    "relative": "BareMetroidvania\\src\\components\\enemyComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMetroidvania\\src\\components\\enemyComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "file": "src\\ui\\hud.ts",
+    "relative": "BareMetroidvania\\src\\ui\\hud.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareMetroidvania\\src\\ui\\hud.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BarePlatformer",
+    "file": "src\\game.ts",
+    "relative": "BarePlatformer\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BarePlatformer\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareShmup",
+    "file": "src\\game.ts",
+    "relative": "BareShmup\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareShmup\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareShmup",
+    "file": "src\\components\\aliveComponent.ts",
+    "relative": "BareShmup\\src\\components\\aliveComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareShmup\\src\\components\\aliveComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTrust",
+    "file": "src\\peep.ts",
+    "relative": "BareTrust\\src\\peep.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareTrust\\src\\peep.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareVamireSurvivors",
+    "file": "src\\systems\\benchmark.ts",
+    "relative": "BareVamireSurvivors\\src\\systems\\benchmark.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareVamireSurvivors\\src\\systems\\benchmark.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\controllers\\movementController.ts",
+    "relative": "emojiWorld\\src\\controllers\\movementController.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\controllers\\movementController.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\components\\aliveComponent.ts",
+    "relative": "emojiWorld\\src\\components\\aliveComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\components\\aliveComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\components\\goalComponent.ts",
+    "relative": "emojiWorld\\src\\components\\goalComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\components\\goalComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\components\\pickupComponent.ts",
+    "relative": "emojiWorld\\src\\components\\pickupComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\components\\pickupComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\components\\enemyAIComponent.ts",
+    "relative": "emojiWorld\\src\\components\\enemyAIComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\components\\enemyAIComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\components\\playerComponent.ts",
+    "relative": "emojiWorld\\src\\components\\playerComponent.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\components\\playerComponent.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "file": "src\\scenes\\mapScene.ts",
+    "relative": "emojiWorld\\src\\scenes\\mapScene.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\emojiWorld\\src\\scenes\\mapScene.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "file": "src\\game.ts",
+    "relative": "GMTK2026\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\GMTK2026\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "file": "src\\scenes\\uiScene.ts",
+    "relative": "GMTK2026\\src\\scenes\\uiScene.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\GMTK2026\\src\\scenes\\uiScene.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "file": "src\\scenes\\goalsScene.ts",
+    "relative": "GMTK2026\\src\\scenes\\goalsScene.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\GMTK2026\\src\\scenes\\goalsScene.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "file": "src\\handlers\\introSequence.ts",
+    "relative": "GMTK2026\\src\\handlers\\introSequence.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\GMTK2026\\src\\handlers\\introSequence.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PrisonersDilemma",
+    "file": "src\\peep.ts",
+    "relative": "PrisonersDilemma\\src\\peep.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\PrisonersDilemma\\src\\peep.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTrust",
+    "file": "src\\game.ts",
+    "relative": "BareTrust\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\BareTrust\\src\\game.ts"
+  },
+  {
+    "project": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PrisonersDilemma",
+    "file": "src\\game.ts",
+    "relative": "PrisonersDilemma\\src\\game.ts",
+    "stage": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareZelda\\.tmp\\all-waits\\PrisonersDilemma\\src\\game.ts"
+  }
+]

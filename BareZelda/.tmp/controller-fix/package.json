@@ -1,0 +1,97 @@
+{
+  "name": "bare-engine",
+  "version": "0.6.1",
+  "scripts": {
+    "build:lib": "node scripts/cleanDist.cjs && vite build",
+    "analyze": "node scripts/analyze.cjs",
+    "dev:fixture": "node scripts/devFixture.cjs",
+    "test": "node scripts/runTests.cjs",
+    "test:e2e": "npm run test",
+    "test:plugins": "node --test scripts/autoRegisterPlugin.test.cjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:check": "node scripts/checkDocsLinks.cjs && node scripts/checkDocsExamples.cjs",
+    "docs:check-examples": "tsc --noEmit --pretty false",
+    "docs:check-site": "node --test scripts/checkDocsSite.test.cjs && node scripts/checkDocsSite.cjs",
+    "docs:test": "node scripts/runTests.cjs docsExamplesTest",
+    "docs:validate": "npm run docs:check && npm run docs:check-examples && npm run docs:build && npm run docs:check-site && npm run docs:test"
+  },
+  "description": "Bare Game Engine - Build for Web",
+  "license": "MIT",
+  "files": [
+    "config",
+    "docs/guide",
+    "docs/reference",
+    "features/fixtures/src/docExamples",
+    "scripts/analyze.cjs",
+    "scripts/buildAssets.cjs",
+    "scripts/stripTexturePackImages.cjs",
+    "scripts/texturePackImagesConfig.cjs",
+    "scripts/zip.cjs",
+    "src",
+    "vite",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "bare-engine-analyze": "./scripts/analyze.cjs",
+    "bare-engine-assets": "./scripts/buildAssets.cjs",
+    "bare-engine-zip": "./scripts/zip.cjs"
+  },
+  "sideEffects": [
+    "./src/main.ts",
+    "./src/controllers/*.ts",
+    "./src/handlers/cameraHandler.ts",
+    "./src/handlers/levelHandler.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./arcade": {
+      "types": "./src/arcade.ts",
+      "default": "./src/arcade.ts"
+    },
+    "./sopiro": {
+      "types": "./src/sopiro.ts",
+      "default": "./src/sopiro.ts"
+    },
+    "./config": "./config/index.cjs",
+    "./config/vite.config": "./config/vite.config.cjs",
+    "./config/vite.config.cjs": "./config/vite.config.cjs",
+    "./config/assetpack.config": "./config/assetpack.config.mjs",
+    "./config/assetpack.config.mjs": "./config/assetpack.config.mjs",
+    "./config/tsconfig.base.json": "./config/tsconfig.base.json",
+    "./vite/*": "./vite/*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3 || ^6.0.3",
+    "vite": "^6.3.5",
+    "vite-bundle-visualizer": "^1.2.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
+    "@types/node": "^25.1.0",
+    "selenium-webdriver": "^4.43.0",
+    "typescript": "^6.0.3",
+    "vite": "^6.4.2",
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "bare-tools": "github:bare-engine/bare-tools#semver:^1.0.1",
+    "magic-string": "^0.30.21"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "peerDependenciesMeta": {
+    "vite-bundle-visualizer": {
+      "optional": true
+    }
+  }
+}

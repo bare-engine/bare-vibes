@@ -1,0 +1,319 @@
+{
+  "layers": ["ground", "walls", "floor", "objects", "fx"],
+  "layersInfo": {
+    "ground": { "showInEditor": true },
+    "walls": { "collidesWith": ["objects"] },
+    "floor": { "collidesWith": ["objects"] },
+    "objects": { "collidesWith": ["objects"] }
+  },
+  "settings": { "gridEnabled": true, "gridSize": 16 },
+  "editorObjectSnapToPivot": false,
+  "presets": {
+    "FEET": { "ANY": { "x": 0.5, "y": 1 } }
+  },
+  "basePrefabs": [
+    {
+      "name": "ANY",
+      "baseClass": "ArcadeObject",
+      "pivot": "FEET"
+    },
+    {
+      "name": "solid",
+      "static": true,
+      "hitbox": "FULL"
+    },
+    {
+      "name": "enemyBase",
+      "components": { "animation": {} }
+    },
+    {
+      "name": "bossBase",
+      "drag": 0
+    },
+    {
+      "name": "npcBase",
+      "static": true,
+      "hitbox": { "x1": 3, "y1": 8, "x2": 13, "y2": 16 },
+      "components": { "animation": {} }
+    },
+    {
+      "name": "shot",
+      "pivot": "CENTER",
+      "sensor": true,
+      "stayInBounds": false,
+      "removeOnOutOfBounds": true
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "mapBg",
+      "extends": "NONE",
+      "baseClass": "GameObject"
+    },
+    {
+      "name": "wall",
+      "extends": "NONE",
+      "baseClass": "ArcadeObject",
+      "texture": "PIXEL",
+      "static": true,
+      "visible": false,
+      "tags": ["wall"]
+    },
+    {
+      "name": "water",
+      "extends": "wall",
+      "tags": ["wall", "water"]
+    },
+    {
+      "name": "warp",
+      "texture": "PIXEL",
+      "scale": { "x": 12, "y": 12 },
+      "sensor": true,
+      "visible": false,
+      "components": { "warp": {} }
+    },
+
+    {
+      "name": "player",
+      "texture": "hero_down1",
+      "persistent": true,
+      "hitbox": { "x1": 4, "y1": 9, "x2": 12, "y2": 16 },
+      "components": { "player": {} }
+    },
+    {
+      "name": "sword",
+      "texture": "sword",
+      "pivot": { "x": 0.5, "y": 0.92 },
+      "sensor": true,
+      "hitbox": { "x1": 5, "y1": 0, "x2": 11, "y2": 13 }
+    },
+    {
+      "name": "arrow",
+      "extends": "shot",
+      "texture": "arrow",
+      "components": { "projectile": { "kind": "arrow", "owner": "player", "damage": 1 } }
+    },
+    {
+      "name": "fireball",
+      "extends": "shot",
+      "texture": "fireball",
+      "components": { "projectile": { "kind": "fire", "owner": "player", "damage": 2 } }
+    },
+    {
+      "name": "enemyRock",
+      "extends": "shot",
+      "texture": "rock",
+      "components": { "projectile": { "kind": "enemy", "owner": "enemy", "damage": 1, "life": 1.4 } }
+    },
+    {
+      "name": "enemyFire",
+      "extends": "shot",
+      "texture": "fireball",
+      "components": { "projectile": { "kind": "enemy", "owner": "enemy", "damage": 2, "life": 2.5 } }
+    },
+    {
+      "name": "enemyMagic",
+      "extends": "shot",
+      "texture": "fireball",
+      "color": "#c080ff",
+      "components": { "projectile": { "kind": "enemy", "owner": "enemy", "damage": 2, "life": 2.5 } }
+    },
+    {
+      "name": "bombLit",
+      "texture": "bomb",
+      "sensor": true,
+      "components": { "bomb": {} }
+    },
+    {
+      "name": "pickup",
+      "texture": "rupee",
+      "sensor": true,
+      "components": { "pickup": {} }
+    },
+
+    {
+      "name": "slime",
+      "extends": "enemyBase",
+      "texture": "slime1",
+      "hitbox": { "x1": 3, "y1": 9, "x2": 13, "y2": 16 },
+      "components": { "enemy": { "kind": "slime", "hp": 2, "speed": 30, "damage": 1 } }
+    },
+    {
+      "name": "bat",
+      "extends": "enemyBase",
+      "texture": "bat1",
+      "hitbox": { "x1": 3, "y1": 6, "x2": 13, "y2": 12 },
+      "components": { "enemy": { "kind": "bat", "hp": 1, "speed": 60, "damage": 1 } }
+    },
+    {
+      "name": "octo",
+      "extends": "enemyBase",
+      "texture": "octo1",
+      "hitbox": { "x1": 3, "y1": 5, "x2": 13, "y2": 15 },
+      "components": { "enemy": { "kind": "octo", "hp": 2, "speed": 32, "damage": 1 } }
+    },
+    {
+      "name": "skeleton",
+      "extends": "enemyBase",
+      "texture": "skeleton1",
+      "hitbox": { "x1": 4, "y1": 8, "x2": 12, "y2": 16 },
+      "components": { "enemy": { "kind": "skeleton", "hp": 4, "speed": 42, "damage": 2 } }
+    },
+
+    {
+      "name": "kingSlime",
+      "extends": "bossBase",
+      "texture": "boss_slime",
+      "hitbox": { "x1": 4, "y1": 14, "x2": 28, "y2": 32 },
+      "components": { "boss": { "kind": "slime", "hp": 12 } }
+    },
+    {
+      "name": "golem",
+      "extends": "bossBase",
+      "texture": "boss_golem",
+      "hitbox": { "x1": 4, "y1": 8, "x2": 28, "y2": 32 },
+      "components": { "boss": { "kind": "golem", "hp": 10 } }
+    },
+    {
+      "name": "serpent",
+      "extends": "bossBase",
+      "texture": "boss_serpent",
+      "sensor": true,
+      "hitbox": { "x1": 6, "y1": 2, "x2": 26, "y2": 28 },
+      "components": { "boss": { "kind": "serpent", "hp": 10 } }
+    },
+    {
+      "name": "flameKnight",
+      "extends": "bossBase",
+      "texture": "boss_knight",
+      "hitbox": { "x1": 6, "y1": 10, "x2": 26, "y2": 32 },
+      "components": { "boss": { "kind": "knight", "hp": 14 } }
+    },
+    {
+      "name": "darkLord",
+      "extends": "bossBase",
+      "texture": "boss_lord",
+      "hitbox": { "x1": 6, "y1": 10, "x2": 26, "y2": 32 },
+      "components": { "boss": { "kind": "lord", "hp": 22 } }
+    },
+
+    {
+      "name": "chest",
+      "extends": "solid",
+      "texture": "chest",
+      "hitbox": { "x1": 1, "y1": 4, "x2": 15, "y2": 15 },
+      "components": { "chest": {} }
+    },
+    {
+      "name": "lockedDoor",
+      "extends": "solid",
+      "texture": "door_locked",
+      "components": { "door": {} }
+    },
+    {
+      "name": "bossDoor",
+      "extends": "solid",
+      "texture": "door_boss",
+      "components": { "door": { "boss": true } }
+    },
+    {
+      "name": "gate",
+      "extends": "solid",
+      "texture": "gate",
+      "components": { "gate": {} }
+    },
+    {
+      "name": "seal",
+      "extends": "solid",
+      "texture": "seal",
+      "components": { "gate": {} }
+    },
+    {
+      "name": "switch",
+      "extends": "solid",
+      "texture": "switch_off",
+      "hitbox": { "x1": 3, "y1": 2, "x2": 13, "y2": 16 },
+      "components": { "switch": { "by": "any", "onTexture": "switch_on" } }
+    },
+    {
+      "name": "eye",
+      "extends": "solid",
+      "texture": "eye_open",
+      "components": { "switch": { "by": "arrow", "onTexture": "eye_closed" } }
+    },
+    {
+      "name": "torch",
+      "extends": "solid",
+      "texture": "torch",
+      "hitbox": { "x1": 3, "y1": 4, "x2": 13, "y2": 16 },
+      "components": { "torch": {}, "animation": {} }
+    },
+    {
+      "name": "crackedWall",
+      "extends": "solid",
+      "texture": "cracked_wall",
+      "components": { "breakable": { "by": "bomb", "effect": "puff" } }
+    },
+    {
+      "name": "crackedRock",
+      "extends": "solid",
+      "texture": "cracked_rock",
+      "components": { "breakable": { "by": "bomb", "effect": "puff" } }
+    },
+    {
+      "name": "thorns",
+      "extends": "solid",
+      "texture": "thorns",
+      "components": { "breakable": { "by": "fire", "effect": "fire" } }
+    },
+    {
+      "name": "bush",
+      "extends": "solid",
+      "texture": "bush",
+      "hitbox": { "x1": 2, "y1": 4, "x2": 14, "y2": 16 },
+      "components": { "breakable": { "by": "sword,fire,bomb", "drops": true, "effect": "leaves" } }
+    },
+    {
+      "name": "pot",
+      "extends": "solid",
+      "texture": "pot",
+      "hitbox": { "x1": 3, "y1": 4, "x2": 13, "y2": 16 },
+      "components": { "breakable": { "by": "sword,bomb,arrow", "drops": true, "effect": "puff" } }
+    },
+    {
+      "name": "sign",
+      "extends": "solid",
+      "texture": "sign",
+      "hitbox": { "x1": 2, "y1": 6, "x2": 14, "y2": 16 },
+      "components": { "npc": { "who": "sign" } }
+    },
+
+    { "name": "elder", "extends": "npcBase", "texture": "npc_elder1", "components": { "npc": { "who": "elder" } } },
+    { "name": "mina", "extends": "npcBase", "texture": "npc_mina1", "components": { "npc": { "who": "mina" } } },
+    { "name": "merchant", "extends": "npcBase", "texture": "npc_merchant1", "components": { "npc": { "who": "merchant" } } },
+    { "name": "fisher", "extends": "npcBase", "texture": "npc_fisher1", "components": { "npc": { "who": "fisher" } } },
+    { "name": "guard", "extends": "npcBase", "texture": "npc_guard1", "components": { "npc": { "who": "guard" } } },
+    { "name": "kid", "extends": "npcBase", "texture": "npc_kid1", "components": { "npc": { "who": "kid" } } },
+    { "name": "cat", "extends": "npcBase", "texture": "npc_cat1", "hitbox": { "x1": 3, "y1": 9, "x2": 13, "y2": 15 }, "components": { "npc": { "who": "cat" } } }
+  ],
+  "animations": {
+    "slime": { "frames": ["slime1", "slime2"], "framesPerSecond": 3 },
+    "bat": { "frames": ["bat1", "bat2"], "framesPerSecond": 8 },
+    "octo": { "frames": ["octo1", "octo2"], "framesPerSecond": 4 },
+    "skeleton": { "frames": ["skeleton1", "skeleton2"], "framesPerSecond": 4 },
+    "elder": { "frames": ["npc_elder1", "npc_elder2"], "framesPerSecond": 1.5 },
+    "mina": { "frames": ["npc_mina1", "npc_mina2"], "framesPerSecond": 1.5 },
+    "merchant": { "frames": ["npc_merchant1", "npc_merchant2"], "framesPerSecond": 1.5 },
+    "fisher": { "frames": ["npc_fisher1", "npc_fisher2"], "framesPerSecond": 1 },
+    "guard": { "frames": ["npc_guard1", "npc_guard2"], "framesPerSecond": 1.2 },
+    "kid": { "frames": ["npc_kid1", "npc_kid2"], "framesPerSecond": 2.5 },
+    "cat": { "frames": ["npc_cat1", "npc_cat2"], "framesPerSecond": 2 },
+    "torch_lit": { "frames": ["torch_lit1", "torch_lit2"], "framesPerSecond": 6 }
+  },
+  "categories": {
+    "enemies": { "entries": ["slime", "bat", "octo", "skeleton"], "expanded": true },
+    "bosses": { "entries": ["kingSlime", "golem", "serpent", "flameKnight", "darkLord"] },
+    "objects": { "entries": ["chest", "lockedDoor", "bossDoor", "gate", "seal", "switch", "eye", "torch", "crackedWall", "crackedRock", "thorns", "bush", "pot", "sign", "warp"] },
+    "people": { "entries": ["elder", "mina", "merchant", "fisher", "guard", "kid", "cat"] }
+  }
+}

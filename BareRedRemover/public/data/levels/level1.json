@@ -1,0 +1,123 @@
+{
+  "name": "level1",
+  "dimensions": {
+    "width": 640,
+    "height": 480
+  },
+  "customData": {
+    "title": "Tutorial: Red Shapes",
+    "author": "Gaz",
+    "par": 3,
+    "background": "bg/tut1",
+    "originalLevel": 1
+  },
+  "entitiesByLayer": {
+    "objects": [
+      {
+        "extends": "r_fkill",
+        "position": {
+          "x": 532,
+          "y": 340
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_fkill",
+        "position": {
+          "x": 86,
+          "y": 346
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 374,
+          "y": 365
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 269,
+          "y": 362
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 322,
+          "y": 364
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 352,
+          "y": 313
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 300,
+          "y": 313
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 328,
+          "y": 264
+        },
+        "scale": {
+          "x": 0.25,
+          "y": 0.25
+        },
+        "mass": 0.25
+      },
+      {
+        "extends": "r_fkill",
+        "position": {
+          "x": 319,
+          "y": 403
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.125
+        }
+      }
+    ]
+  }
+}

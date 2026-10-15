@@ -1,0 +1,282 @@
+[
+  {
+    "name": "BareDemosCollection\\bare-platformer",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UI",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 957.9666667381923
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareDemosCollection\\bare-shmup",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": false,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 0
+    },
+    "errors": [
+      "TypeError: Cannot read properties of undefined (reading 'SHIP')\n    at di.OnStart (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:315:14747)\n    at di.Start (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:290:4363)\n    at di.Awake (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:290:4080)\n    at SceneController.Add (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:276:49663)\n    at SceneController.Goto (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:276:49318)\n    at BareEngine.Init (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:311:220)\n    at async c (http://127.0.0.1:57395/bundle.min.js?v=mv81jz1f:315:2802)"
+    ],
+    "passed": false
+  },
+  {
+    "name": "BareJumper",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "MenuScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1271.0333333810172
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareMetroidvania",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": true
+        },
+        {
+          "name": "Hud",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "TitleScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1233.2333333094916
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareMemory",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 442.33333333333337
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BarePlatformer",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UI",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1210.7666668097177
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareShmup",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1445.4666667381923
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareTrust",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1199.5
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "BareVamireSurvivors",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "Hud",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1119.6999998092651
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "GMTK2026",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "GoalsScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 373.0333332618078
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "PrisonersDilemma",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 1099.2000000476837
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "emojiWorld",
+    "state": {
+      "globalWait": "undefined",
+      "scenes": [
+        {
+          "name": "Game",
+          "started": false,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "MapScene",
+          "started": false,
+          "enabled": true,
+          "paused": false
+        },
+        {
+          "name": "UIScene",
+          "started": true,
+          "enabled": true,
+          "paused": false
+        }
+      ],
+      "time": 0
+    },
+    "errors": [
+      "TypeError: this.camera.SetBoundsToScreen is not a function\n    at Lr.OnPostLoadLevel (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:421:227594)\n    at Lr.PostLoadLevel (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:372:29221)\n    at LevelHandler.Load (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:277:9991)\n    at async Lr.OnStart (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:421:226097)\n    at async Lr.Start (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:372:18745)\n    at async Lr.Awake (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:372:18462)\n    at async SceneController.Add (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:276:27230)\n    at async pi.OnStart (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:421:232146)\n    at async pi.Start (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:372:18745)\n    at async pi.Awake (http://127.0.0.1:62250/bundle.min.js?v=mv81kwao:372:18462)"
+    ],
+    "passed": false
+  }
+]

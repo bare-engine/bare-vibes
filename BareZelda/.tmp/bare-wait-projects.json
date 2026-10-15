@@ -1,0 +1,209 @@
+[
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-platformer",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:68:                await wait(.4);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-rpg",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\gameOver.ts:18:        await wait(delaySeconds, true);\r\n.\\src\\game.ts:60:            await wait(1.5, true);\r\n.\\src\\components\\aliveComponent.ts:55:            await wait(1.6, true);\r\n.\\src\\components\\enemyAIComponent.ts:110:        await wait(.6);\r\n.\\src\\components\\enemyAIComponent.ts:157:        await wait(.1);\r\n.\\src\\components\\enemyAIComponent.ts:181:        await waitFrame();\r\n.\\src\\components\\enemyAIComponent.ts:187:        await wait(.4);\r\n.\\src\\objects\\weapon.ts:31:        await wait(.05, true);\r\n.\\src\\objects\\weapon.ts:48:        await waitFrame();\r\n.\\src\\components\\playerComponents.ts:36:        await wait(.4, true);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareDemosCollection\\bare-shmup",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && cd dist && bestzip ../dist.zip *",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:42:            await wait(1.5);\r\n.\\src\\components\\aliveComponent.ts:66:            await wait(.5, true);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareJumper",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    },
+    "matches": ".\\src\\components\\orbComponent.ts:25:        await wait(0.6);\r\n.\\src\\scenes\\runScene.ts:165:        await wait(0.7);\r\n.\\src\\scenes\\runScene.ts:179:        await wait(2.2);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMemory",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:250:        cancelWaits();\n.\\src\\game.ts:434:        await wait(NEXT_LEVEL_SETTLE_DELAY);\n.\\src\\game.ts:475:        await wait(WIN_TAP_DELAY);\n.\\src\\game.ts:481:        await Promise.race([wait(WIN_HOLD_DURATION - WIN_TAP_DELAY), tapped]);\n.\\src\\game.ts:635:            await wait(WIN_SETTLE_TIMESTEP);\n.\\src\\game.ts:643:        await wait(this.FlyTiles(false));\n.\\src\\game.ts:864:        await wait(TILE_FLIP_DURATION * 2);\n.\\src\\game.ts:870:        await wait(.15);\n.\\src\\game.ts:875:        await wait(WRONG_HOLD_DURATION);\n.\\src\\game.ts:912:        await wait(WRONG_SHAKE_TIMESTEP);\n.\\src\\game.ts:1156:        await wait(PACK_INTRO_DURATION);\n.\\src\\game.ts:1323:            await wait(settled);\n.\\src\\menu.ts:400:        cancelWaits();"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareMetroidvania",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.1",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm uninstall bare-engine && npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0 && npm pkg set dependencies.bare-engine=github:bare-engine/bare-engine#semver:^0.6.0"
+    },
+    "matches": ".\\src\\game.ts:231:        await wait(1.2, true);\n.\\src\\components\\crackedComponent.ts:37:        await wait(0.6);\n.\\src\\components\\playerComponent.ts:415:        await wait(0.3, true);\n.\\src\\components\\enemyComponent.ts:175:        await wait(0.5);\n.\\src\\ui\\hud.ts:102:        await wait(seconds, true);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BarePlatformer",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:68:                await wait(.4);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareShmup",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:43:            await wait(1.5);\r\n.\\src\\components\\aliveComponent.ts:65:            await wait(.5, true);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareTrust",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\peep.ts:129:        await wait(.2);\r\n.\\src\\peep.ts:154:        await wait(outcome == Outcome.Reward ? .6 : .9);\r\n.\\src\\peep.ts:177:            await wait(.8);\r\n.\\src\\peep.ts:181:            await wait(.3);\r\n.\\src\\peep.ts:196:        await wait(delay);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\BareVamireSurvivors",
+    "dependency": "github:bare-engine/bare-engine#semver:^0.6.0",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+      "update-engine": "npm install bare-engine@github:bare-engine/bare-engine#semver:^0.6.0"
+    },
+    "matches": ".\\src\\systems\\benchmark.ts:60:            await wait(0.5);\n.\\src\\systems\\benchmark.ts:71:                await wait(Benchmark.SETTLE_SECONDS);\n.\\src\\systems\\benchmark.ts:73:                await wait(Benchmark.MEASURE_SECONDS);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\emojiWorld",
+    "dependency": "file:../BareEngine",
+    "scripts": {
+      "dev": "node log.js dev && vite --config vite.config.cjs --mode development",
+      "dev:open": "node log.js dev && vite --config vite.config.cjs --mode development --open",
+      "build": "node log.js build && vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\controllers\\movementController.ts:849:        await wait(.4, true);\r\n.\\src\\components\\aliveComponent.ts:57:            await wait(1.6, true);\r\n.\\src\\components\\goalComponent.ts:381:            await wait(.09);\n.\\src\\components\\goalComponent.ts:389:        await wait(.35);\n.\\src\\components\\goalComponent.ts:401:        //await wait(750);\n.\\src\\components\\goalComponent.ts:503:        await wait(.75);\n.\\src\\components\\goalComponent.ts:628:        await wait(.1);\n.\\src\\components\\goalComponent.ts:638:        await wait(.4);\n.\\src\\components\\pickupComponent.ts:74:        await wait(.01);\n.\\src\\components\\enemyAIComponent.ts:174:        await wait(.6);\n.\\src\\components\\enemyAIComponent.ts:233:        await wait(.1);\n.\\src\\components\\enemyAIComponent.ts:257:        await waitFrame();\n.\\src\\components\\enemyAIComponent.ts:263:        await wait(.4);\n.\\src\\components\\playerComponent.ts:217:        await wait(.05, true);\n.\\src\\scenes\\mapScene.ts:153:        await wait(.1);\r\n.\\src\\scenes\\mapScene.ts:159:        await wait(.4);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\GMTK2026",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\game.ts:676:                await wait(.05);\r\n.\\src\\game.ts:680:                await wait(Math.random() * .5);\r\n.\\src\\game.ts:831:            await wait(.05);\r\n.\\src\\scenes\\uiScene.ts:500:        await wait(2);\r\n.\\src\\scenes\\uiScene.ts:504:        await wait(2, true);\r\n.\\src\\scenes\\goalsScene.ts:79:        await wait(.3);\n.\\src\\scenes\\goalsScene.ts:83:        await wait(.3);\n.\\src\\handlers\\introSequence.ts:79:        await wait(WEEK_TO_MOOD_PAUSE);"
+  },
+  {
+    "dir": "C:\\Users\\default.DESKTOP-FF34UB7\\Documents\\Programming\\JS\\PrisonersDilemma",
+    "dependency": "github:BareEngine/BareEngine",
+    "scripts": {
+      "dev": "vite --config vite.config.cjs --mode development",
+      "dev:open": "vite --config vite.config.cjs --mode development --open",
+      "build": "vite build --config vite.config.cjs --mode production",
+      "build-zip": "npm run build && bare-engine-zip",
+      "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+      "build-nolog": "vite build --config vite.config.cjs --mode production",
+      "analyze": "bare-engine-analyze",
+      "poki-upload": "poki upload",
+      "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "matches": ".\\src\\peep.ts:129:        await wait(.2);\r\n.\\src\\peep.ts:154:        await wait(outcome == Outcome.Reward ? .6 : .9);\r\n.\\src\\peep.ts:177:            await wait(.8);\r\n.\\src\\peep.ts:181:            await wait(.3);\r\n.\\src\\peep.ts:196:        await wait(delay);"
+  }
+]

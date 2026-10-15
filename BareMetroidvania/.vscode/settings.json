@@ -1,0 +1,12 @@
+{
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.suggest.classMemberSnippets.enabled": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": true
+}

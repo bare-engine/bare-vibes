@@ -1,0 +1,179 @@
+{
+  "name": "level2",
+  "dimensions": {
+    "width": 6656,
+    "height": 704
+  },
+  "customData": {
+    "title": "Mind the Gap",
+    "speed": 420,
+    "index": 2
+  },
+  "entitiesByLayer": {
+    "objects": [
+      {
+        "extends": "block",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 104,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 1184,
+          "y": 96
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 1600,
+          "y": 64
+        },
+        "scale": {
+          "x": 5,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 2592,
+          "y": 96
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 3328,
+          "y": 64
+        },
+        "scale": {
+          "x": 5,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 4064,
+          "y": 96
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 4608,
+          "y": 64
+        },
+        "scale": {
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 5408,
+          "y": 96
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 5888,
+          "y": 64
+        },
+        "scale": {
+          "x": 3,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 3968,
+          "y": 512
+        },
+        "scale": {
+          "x": 3,
+          "y": 1
+        }
+      },
+      {
+        "extends": "goal",
+        "position": {
+          "x": 6336,
+          "y": 512
+        }
+      },
+      {
+        "extends": "player",
+        "position": {
+          "x": 160,
+          "y": 616
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 3968,
+          "y": 576
+        },
+        "scale": {
+          "x": 3,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeUp",
+        "position": {
+          "x": 5248,
+          "y": 608
+        },
+        "scale": {
+          "x": 5,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 0,
+          "y": 640
+        },
+        "scale": {
+          "x": 16,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 1344,
+          "y": 640
+        },
+        "scale": {
+          "x": 17,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 2816,
+          "y": 640
+        },
+        "scale": {
+          "x": 60,
+          "y": 1
+        }
+      }
+    ]
+  }
+}

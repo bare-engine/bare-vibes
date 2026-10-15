@@ -1,0 +1,138 @@
+{
+  "layers": ["background", "ground", "objects"],
+  "categories": {
+    "course": {
+      "entries": ["ball", "hole", "wall"],
+      "expanded": true
+    },
+    "hazards": {
+      "entries": ["sand", "water", "boost"],
+      "expanded": true
+    },
+    "background": {
+      "entries": ["grass"]
+    }
+  },
+  "settings": {
+    "gridEnabled": true,
+    "gridSize": 24
+  },
+  "basePrefabs": [
+    {
+      "name": "tiled",
+      "baseClass": "ArcadeObject",
+      "texture": "tile",
+      "static": true,
+      "scale": {
+        "x": 4,
+        "y": 4
+      },
+      "components": {
+        "wallTiles": {
+          "tileScale": 4,
+          "fillTexture": "tileFull"
+        }
+      }
+    },
+    {
+      "name": "hazard",
+      "extends": "tiled",
+      "sensor": true,
+      "scale": {
+        "x": 12,
+        "y": 12
+      }
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "ball",
+      "baseClass": "ArcadeObject",
+      "texture": "ball",
+      "pivot": "CENTER",
+      "hitboxType": "Circle",
+      "hitboxRadius": 7.5,
+      "restitution": 0.7,
+      "drag": 0.012,
+      "continuous": true,
+      "components": {
+        "ball": {}
+      }
+    },
+    {
+      "name": "hole",
+      "baseClass": "ArcadeObject",
+      "texture": "ball",
+      "color": "#14301a",
+      "pivot": "CENTER",
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      },
+      "static": true,
+      "sensor": true,
+      "hitboxType": "Circle",
+      "hitboxRadius": 7.5,
+      "components": {
+        "hole": {}
+      }
+    },
+    {
+      "name": "wall",
+      "extends": "tiled",
+      "color": "#b07a4a"
+    },
+    {
+      "name": "sand",
+      "extends": "hazard",
+      "color": "#ecd58a",
+      "components": {
+        "sand": {}
+      }
+    },
+    {
+      "name": "water",
+      "extends": "hazard",
+      "color": "#4a9be8",
+      "components": {
+        "water": {}
+      }
+    },
+    {
+      "name": "boost",
+      "baseClass": "ArcadeObject",
+      "texture": "boost",
+      "color": "#ff9a52",
+      "pivot": "CENTER",
+      "static": true,
+      "sensor": true,
+      "scale": {
+        "x": 6,
+        "y": 6
+      },
+      "components": {
+        "tiled": {
+          "tileScale": 3,
+          "scroll": {
+            "x": 1.5,
+            "y": 0
+          }
+        },
+        "boost": {}
+      }
+    },
+    {
+      "name": "grass",
+      "texture": "bg",
+      "scale": {
+        "x": 60,
+        "y": 45
+      },
+      "components": {
+        "tiled": {
+          "tileScale": 4
+        }
+      }
+    }
+  ]
+}

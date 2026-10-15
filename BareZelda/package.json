@@ -1,0 +1,35 @@
+{
+    "name": "bare-game",
+    "version": "1.2.1",
+    "scripts": {
+        "dev": "vite --config vite.config.cjs --mode development",
+        "dev:open": "vite --config vite.config.cjs --mode development --open",
+        "build": "vite build --config vite.config.cjs --mode production",
+        "build-zip": "npm run build && bare-engine-zip",
+        "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+        "build-nolog": "vite build --config vite.config.cjs --mode production",
+        "analyze": "bare-engine-analyze",
+        "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs",
+        "build:art": "node tools/art.cjs",
+        "build:maps": "node tools/maps.cjs",
+        "build:sfx": "node tools/sfx.cjs",
+        "update-engine": "npm uninstall bare-engine && npm install \"bare-engine@github:bare-engine/bare-engine#semver:^0.6.0\" && npm pkg set \"dependencies.bare-engine=github:bare-engine/bare-engine#semver:^0.6.0\""
+    },
+    "author": "Jeroen Wimmers",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "6.0.3",
+        "vite": "^6.3.5"
+    },
+    "bareEngine": {
+        "gameId": "9c7bcca3-7259-4586-bc3b-6e5394494c81"
+    },
+    "allowScripts": {
+        "esbuild": true,
+        "sharp": true,
+        "vue-demi": true
+    },
+    "dependencies": {
+        "bare-engine": "github:bare-engine/bare-engine#semver:^0.6.0"
+    }
+}

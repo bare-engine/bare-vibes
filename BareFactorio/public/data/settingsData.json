@@ -1,0 +1,249 @@
+{
+  "layers": [
+    "objects",
+    "overlay"
+  ],
+  "basePrefabs": [
+    {
+      "name": "building",
+      "tags": [
+        "building"
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "hq",
+      "extends": "building",
+      "texture": "b_hq",
+      "customData": {
+        "label": "Colony HQ",
+        "kind": "storage",
+        "size": [
+          2,
+          2
+        ],
+        "cost": {},
+        "buildSeconds": 0,
+        "tool": false,
+        "desc": "Home sweet home. Stores anything."
+      }
+    },
+    {
+      "name": "belt",
+      "extends": "building",
+      "texture": "belt_0",
+      "customData": {
+        "label": "Conveyor",
+        "kind": "belt",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "plank": 1
+        },
+        "buildSeconds": 0.3,
+        "rotatable": true,
+        "walkable": true,
+        "desc": "Moves items. Drag to lay a line, R to rotate."
+      }
+    },
+    {
+      "name": "crate",
+      "extends": "building",
+      "texture": "b_crate",
+      "customData": {
+        "label": "Crate",
+        "kind": "storage",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "plank": 4
+        },
+        "buildSeconds": 1,
+        "desc": "Storage. Workers drop off here, belts can feed it."
+      }
+    },
+    {
+      "name": "sawmill",
+      "extends": "building",
+      "texture": "b_sawmill",
+      "customData": {
+        "label": "Sawmill",
+        "kind": "crafter",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "wood": 6,
+          "stone": 2
+        },
+        "buildSeconds": 2,
+        "rotatable": true,
+        "recipe": {
+          "in": {
+            "wood": 1
+          },
+          "out": {
+            "plank": 2
+          },
+          "seconds": 2
+        },
+        "desc": "1 wood -> 2 planks."
+      }
+    },
+    {
+      "name": "smelter",
+      "extends": "building",
+      "texture": "b_smelter",
+      "customData": {
+        "label": "Smelter",
+        "kind": "crafter",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "stone": 10
+        },
+        "buildSeconds": 2,
+        "rotatable": true,
+        "recipe": {
+          "in": {
+            "ironOre": 1
+          },
+          "out": {
+            "ironPlate": 1
+          },
+          "seconds": 3
+        },
+        "desc": "1 iron ore -> 1 iron plate."
+      }
+    },
+    {
+      "name": "drill",
+      "extends": "building",
+      "texture": "b_drill",
+      "customData": {
+        "label": "Drill",
+        "kind": "drill",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "plank": 4,
+          "ironPlate": 3
+        },
+        "buildSeconds": 2,
+        "rotatable": true,
+        "mineSeconds": 2.5,
+        "needsResource": [
+          "rock",
+          "iron"
+        ],
+        "desc": "Place on iron ore or rock. Mines by itself, outputs forward."
+      }
+    },
+    {
+      "name": "farm",
+      "extends": "building",
+      "texture": "b_farm_0",
+      "customData": {
+        "label": "Berry farm",
+        "kind": "farm",
+        "size": [
+          2,
+          2
+        ],
+        "cost": {
+          "wood": 6
+        },
+        "buildSeconds": 2,
+        "walkable": true,
+        "growSeconds": 12,
+        "yield": 6,
+        "desc": "Grows berries. Workers harvest them."
+      }
+    },
+    {
+      "name": "hut",
+      "extends": "building",
+      "texture": "b_hut",
+      "customData": {
+        "label": "Hut",
+        "kind": "house",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "plank": 8,
+          "stone": 4
+        },
+        "buildSeconds": 3,
+        "housing": 2,
+        "desc": "Room for 2 more colonists. They move in when berries are stocked."
+      }
+    },
+    {
+      "name": "workshop",
+      "extends": "building",
+      "texture": "b_workshop",
+      "customData": {
+        "label": "Workshop",
+        "kind": "crafter",
+        "size": [
+          1,
+          1
+        ],
+        "cost": {
+          "plank": 6,
+          "ironPlate": 4
+        },
+        "buildSeconds": 3,
+        "rotatable": true,
+        "recipe": {
+          "in": {
+            "ironPlate": 2
+          },
+          "out": {
+            "gear": 1
+          },
+          "seconds": 3
+        },
+        "desc": "2 iron plates -> 1 gear."
+      }
+    },
+    {
+      "name": "worker",
+      "texture": "worker_body",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9
+      },
+      "children": [
+        {
+          "name": "shirt",
+          "texture": "worker_shirt"
+        },
+        {
+          "name": "carry",
+          "texture": "i_wood",
+          "position": {
+            "x": 4,
+            "y": -4
+          },
+          "visible": false
+        }
+      ],
+      "components": {
+        "workerView": {}
+      }
+    }
+  ]
+}

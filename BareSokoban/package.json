@@ -1,0 +1,31 @@
+{
+    "name": "bare-game",
+    "version": "1.2.1",
+    "scripts": {
+        "dev": "vite --config vite.config.cjs --mode development",
+        "dev:open": "vite --config vite.config.cjs --mode development --open",
+        "build": "vite build --config vite.config.cjs --mode production",
+        "build-zip": "npm run build && bare-engine-zip",
+        "dev-nolog": "vite --config vite.config.cjs --mode development --open",
+        "build-nolog": "vite build --config vite.config.cjs --mode production",
+        "analyze": "bare-engine-analyze",
+        "build:assets": "node node_modules/bare-engine/scripts/buildAssets.cjs"
+    },
+    "author": "Jeroen Wimmers",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "6.0.3",
+        "vite": "^6.3.5"
+    },
+    "dependencies": {
+        "bare-engine": "github:BareEngine/BareEngine"
+    },
+    "bareEngine": {
+        "gameId": "0fdb770b-d745-4799-abc5-877d92db8a62"
+    },
+    "allowScripts": {
+        "esbuild": true,
+        "sharp": true,
+        "vue-demi": true
+    }
+}

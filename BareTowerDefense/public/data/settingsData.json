@@ -1,0 +1,203 @@
+{
+  "layers": ["ground", "objects", "enemies", "projectiles"],
+  "basePrefabs": [
+    {
+      "name": "tile",
+      "extends": "NONE"
+    },
+    {
+      "name": "enemy",
+      "pivot": "CENTER",
+      "tags": ["enemy"]
+    },
+    {
+      "name": "tower",
+      "texture": "tower_base",
+      "pivot": "CENTER",
+      "childrenAtPivot": true
+    },
+    {
+      "name": "projectile",
+      "pivot": "CENTER"
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "grassField",
+      "extends": "tile",
+      "texture": "grass",
+      "scale": {
+        "x": 16,
+        "y": 12
+      },
+      "components": {
+        "tiled": {
+          "tileScale": 1
+        }
+      }
+    },
+    {
+      "name": "path",
+      "extends": "tile",
+      "texture": "path"
+    },
+    {
+      "name": "portal",
+      "texture": "portal",
+      "pivot": "CENTER"
+    },
+    {
+      "name": "castle",
+      "texture": "castle",
+      "pivot": "CENTER"
+    },
+    {
+      "name": "enemy_grunt",
+      "extends": "enemy",
+      "texture": "enemy_grunt",
+      "components": {
+        "enemy": {
+          "maxHealth": 30,
+          "speed": 70,
+          "reward": 5,
+          "damage": 1
+        }
+      }
+    },
+    {
+      "name": "enemy_runner",
+      "extends": "enemy",
+      "texture": "enemy_runner",
+      "components": {
+        "enemy": {
+          "maxHealth": 18,
+          "speed": 135,
+          "reward": 4,
+          "damage": 1
+        }
+      }
+    },
+    {
+      "name": "enemy_tank",
+      "extends": "enemy",
+      "texture": "enemy_tank",
+      "components": {
+        "enemy": {
+          "maxHealth": 140,
+          "speed": 42,
+          "reward": 12,
+          "damage": 2
+        }
+      }
+    },
+    {
+      "name": "enemy_boss",
+      "extends": "enemy",
+      "texture": "enemy_boss",
+      "components": {
+        "enemy": {
+          "maxHealth": 900,
+          "speed": 32,
+          "reward": 80,
+          "damage": 10
+        }
+      }
+    },
+    {
+      "name": "tower_arrow",
+      "extends": "tower",
+      "children": [
+        {
+          "name": "head",
+          "texture": "head_arrow",
+          "pivot": "CENTER"
+        }
+      ],
+      "components": {
+        "tower": {
+          "displayName": "Archer",
+          "cost": 50,
+          "range": 150,
+          "fireRate": 1.6,
+          "damage": 9,
+          "projectile": "proj_arrow"
+        }
+      }
+    },
+    {
+      "name": "tower_cannon",
+      "extends": "tower",
+      "children": [
+        {
+          "name": "head",
+          "texture": "head_cannon",
+          "pivot": "CENTER"
+        }
+      ],
+      "components": {
+        "tower": {
+          "displayName": "Cannon",
+          "cost": 90,
+          "range": 130,
+          "fireRate": 0.55,
+          "damage": 24,
+          "splash": 60,
+          "projectile": "proj_cannonball"
+        }
+      }
+    },
+    {
+      "name": "tower_frost",
+      "extends": "tower",
+      "children": [
+        {
+          "name": "head",
+          "texture": "head_frost",
+          "pivot": "CENTER"
+        }
+      ],
+      "components": {
+        "tower": {
+          "displayName": "Frost",
+          "cost": 70,
+          "range": 120,
+          "fireRate": 1,
+          "damage": 3,
+          "slow": 0.5,
+          "slowDuration": 1.5,
+          "projectile": "proj_frost"
+        }
+      }
+    },
+    {
+      "name": "proj_arrow",
+      "extends": "projectile",
+      "texture": "proj_arrow",
+      "components": {
+        "projectile": {
+          "speed": 650
+        }
+      }
+    },
+    {
+      "name": "proj_cannonball",
+      "extends": "projectile",
+      "texture": "proj_cannonball",
+      "components": {
+        "projectile": {
+          "speed": 380
+        }
+      }
+    },
+    {
+      "name": "proj_frost",
+      "extends": "projectile",
+      "texture": "proj_frost",
+      "components": {
+        "projectile": {
+          "speed": 480
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+ "name": "c07",
+ "dimensions": {
+  "width": 320,
+  "height": 192
+ },
+ "backgroundColor": "#1c1215",
+ "customData": {
+  "room": "c07"
+ },
+ "entitiesByLayer": {
+  "background": [
+   {
+    "extends": "backWall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 20,
+     "y": 12
+    },
+    "color": "#3a272c"
+   },
+   {
+    "extends": "torch",
+    "position": {
+     "x": 96,
+     "y": 48
+    }
+   },
+   {
+    "extends": "banner",
+    "position": {
+     "x": 192,
+     "y": 32
+    }
+   }
+  ],
+  "objects": [
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 232,
+     "y": 56
+    }
+   },
+   {
+    "extends": "item_dash",
+    "position": {
+     "x": 264,
+     "y": 152
+    },
+    "components": {
+     "pickup": {
+      "itemId": "c07_dash"
+     }
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 192,
+     "y": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 10
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 80,
+     "y": 32
+    },
+    "scale": {
+     "x": 3,
+     "y": 1
+    }
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 192,
+     "y": 80
+    },
+    "scale": {
+     "x": 4,
+     "y": 1
+    }
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 64,
+     "y": 128
+    },
+    "scale": {
+     "x": 4,
+     "y": 1
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 176
+    },
+    "scale": {
+     "x": 20,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   }
+  ]
+ }
+}

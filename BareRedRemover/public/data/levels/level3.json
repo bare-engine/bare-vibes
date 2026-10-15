@@ -1,0 +1,84 @@
+{
+  "name": "level3",
+  "dimensions": {
+    "width": 640,
+    "height": 480
+  },
+  "customData": {
+    "title": "Tutorial: Green Shapes",
+    "author": "Gaz",
+    "par": 3,
+    "background": "bg/tut3",
+    "originalLevel": 3
+  },
+  "entitiesByLayer": {
+    "objects": [
+      {
+        "extends": "r_fsave",
+        "position": {
+          "x": 319.0,
+          "y": 394.0
+        },
+        "scale": {
+          "x": 1.1,
+          "y": 0.125
+        }
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 320.0,
+          "y": 355.0
+        },
+        "scale": {
+          "x": 0.375,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 421.0,
+          "y": 354.0
+        },
+        "scale": {
+          "x": 0.375,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_kill",
+        "position": {
+          "x": 220.0,
+          "y": 354.0
+        },
+        "scale": {
+          "x": 0.375,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_save",
+        "position": {
+          "x": 268.0,
+          "y": 304.0
+        },
+        "scale": {
+          "x": 0.375,
+          "y": 0.25
+        }
+      },
+      {
+        "extends": "r_save",
+        "position": {
+          "x": 373.0,
+          "y": 305.0
+        },
+        "scale": {
+          "x": 0.375,
+          "y": 0.25
+        }
+      }
+    ]
+  }
+}

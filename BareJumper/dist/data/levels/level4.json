@@ -1,0 +1,201 @@
+{
+  "name": "level4",
+  "dimensions": {
+    "width": 7680,
+    "height": 704
+  },
+  "customData": {
+    "title": "Islands",
+    "speed": 500,
+    "index": 4
+  },
+  "entitiesByLayer": {
+    "objects": [
+      {
+        "extends": "block",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 120,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 1408,
+          "y": 64
+        },
+        "scale": {
+          "x": 9,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 3072,
+          "y": 64
+        },
+        "scale": {
+          "x": 5,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 3968,
+          "y": 64
+        },
+        "scale": {
+          "x": 9,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 5888,
+          "y": 64
+        },
+        "scale": {
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeDown",
+        "position": {
+          "x": 6912,
+          "y": 64
+        },
+        "scale": {
+          "x": 3,
+          "y": 1
+        }
+      },
+      {
+        "extends": "spikeUp",
+        "position": {
+          "x": 4096,
+          "y": 288
+        },
+        "scale": {
+          "x": 15,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 1152,
+          "y": 320
+        },
+        "scale": {
+          "x": 17,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 2976,
+          "y": 352
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 4096,
+          "y": 320
+        },
+        "scale": {
+          "x": 15,
+          "y": 1
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 6304,
+          "y": 352
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 1696,
+          "y": 480
+        }
+      },
+      {
+        "extends": "orb",
+        "position": {
+          "x": 4640,
+          "y": 480
+        }
+      },
+      {
+        "extends": "goal",
+        "position": {
+          "x": 7296,
+          "y": 512
+        }
+      },
+      {
+        "extends": "player",
+        "position": {
+          "x": 160,
+          "y": 616
+        }
+      },
+      {
+        "extends": "spikeUp",
+        "position": {
+          "x": 6400,
+          "y": 608
+        },
+        "scale": {
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 0,
+          "y": 640
+        },
+        "scale": {
+          "x": 17,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 2688,
+          "y": 640
+        },
+        "scale": {
+          "x": 21,
+          "y": 1
+        }
+      },
+      {
+        "extends": "block",
+        "position": {
+          "x": 5504,
+          "y": 640
+        },
+        "scale": {
+          "x": 34,
+          "y": 1
+        }
+      }
+    ]
+  }
+}

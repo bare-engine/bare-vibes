@@ -1,0 +1,121 @@
+{
+ "name": "t03",
+ "dimensions": {
+  "width": 320,
+  "height": 192
+ },
+ "backgroundColor": "#0f1428",
+ "customData": {
+  "room": "t03"
+ },
+ "entitiesByLayer": {
+  "background": [
+   {
+    "extends": "backWall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 20,
+     "y": 12
+    },
+    "color": "#232c4a"
+   },
+   {
+    "extends": "banner",
+    "position": {
+     "x": 272,
+     "y": 96
+    }
+   },
+   {
+    "extends": "banner",
+    "position": {
+     "x": 208,
+     "y": 32
+    }
+   }
+  ],
+  "objects": [
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 200,
+     "y": 104
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 20,
+     "y": 1
+    },
+    "color": "#b4cbff"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#b4cbff"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#b4cbff"
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 160,
+     "y": 112
+    },
+    "scale": {
+     "x": 4,
+     "y": 1
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 112,
+     "y": 160
+    },
+    "scale": {
+     "x": 2,
+     "y": 1
+    },
+    "color": "#b4cbff"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 176
+    },
+    "scale": {
+     "x": 20,
+     "y": 1
+    },
+    "color": "#b4cbff"
+   }
+  ]
+ }
+}

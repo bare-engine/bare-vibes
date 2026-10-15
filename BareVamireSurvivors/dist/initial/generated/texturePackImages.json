@@ -1,0 +1,417 @@
+{
+  "frames": {
+    "zombie": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 36,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 44
+      }
+    },
+    "tree": {
+      "frame": {
+        "x": 40,
+        "y": 2,
+        "w": 64,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 80
+      }
+    },
+    "spark": {
+      "frame": {
+        "x": 2,
+        "y": 48,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      }
+    },
+    "skeleton": {
+      "frame": {
+        "x": 2,
+        "y": 58,
+        "w": 36,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 44
+      }
+    },
+    "rock": {
+      "frame": {
+        "x": 40,
+        "y": 84,
+        "w": 40,
+        "h": 30
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 30
+      }
+    },
+    "player": {
+      "frame": {
+        "x": 106,
+        "y": 2,
+        "w": 48,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 56
+      }
+    },
+    "orb": {
+      "frame": {
+        "x": 82,
+        "y": 84,
+        "w": 28,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 28,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 28,
+        "h": 28
+      }
+    },
+    "ogre": {
+      "frame": {
+        "x": 2,
+        "y": 116,
+        "w": 80,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 84
+      }
+    },
+    "knife": {
+      "frame": {
+        "x": 2,
+        "y": 104,
+        "w": 28,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 28,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 28,
+        "h": 8
+      }
+    },
+    "heart": {
+      "frame": {
+        "x": 106,
+        "y": 60,
+        "w": 22,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 20
+      }
+    },
+    "ground": {
+      "frame": {
+        "x": 84,
+        "y": 114,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      }
+    },
+    "ghost": {
+      "frame": {
+        "x": 156,
+        "y": 2,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      }
+    },
+    "gem_red": {
+      "frame": {
+        "x": 112,
+        "y": 82,
+        "w": 18,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 18,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 18,
+        "h": 22
+      }
+    },
+    "gem_green": {
+      "frame": {
+        "x": 130,
+        "y": 60,
+        "w": 16,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "gem_blue": {
+      "frame": {
+        "x": 132,
+        "y": 82,
+        "w": 14,
+        "h": 18
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 14,
+        "h": 18
+      },
+      "sourceSize": {
+        "w": 14,
+        "h": 18
+      }
+    },
+    "flower": {
+      "frame": {
+        "x": 84,
+        "y": 180,
+        "w": 14,
+        "h": 14
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 14,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 14,
+        "h": 14
+      }
+    },
+    "bolt": {
+      "frame": {
+        "x": 100,
+        "y": 180,
+        "w": 20,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 20
+      }
+    },
+    "bat": {
+      "frame": {
+        "x": 150,
+        "y": 60,
+        "w": 40,
+        "h": 26
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 26
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 26
+      }
+    },
+    "aura": {
+      "frame": {
+        "x": 194,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "arrow": {
+      "frame": {
+        "x": 148,
+        "y": 88,
+        "w": 24,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 24
+      }
+    }
+  },
+  "animations": {},
+  "meta": {
+    "app": "http://github.com/pixijs/assetpack",
+    "version": "1.0",
+    "image": "texturePackImages.webp",
+    "format": "RGBA8888",
+    "size": {
+      "w": 324,
+      "h": 202
+    },
+    "scale": 1,
+    "related_multi_packs": []
+  }
+}

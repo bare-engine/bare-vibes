@@ -1,0 +1,941 @@
+{
+ "name": "d1",
+ "dimensions": {
+  "width": 592,
+  "height": 496
+ },
+ "backgroundColor": "#0e0e16",
+ "customData": {
+  "title": "Forest Temple",
+  "music": "dungeon",
+  "dungeon": "d1",
+  "sigil": "#7cf08a",
+  "theme": "forest",
+  "nav": [
+   "#####################################",
+   "#...........#...........#############",
+   "#.#.......#.#.#.......#.#############",
+   "#...........#...........#############",
+   "#...........#...........#############",
+   "#...........#...........#############",
+   "#...........#...........#############",
+   "#...........#...........#############",
+   "#.#.......#.#.#.......#.#############",
+   "#...........#...........#############",
+   "######.###########.##################",
+   "#...........#...........#...........#",
+   "#...........#.#..#.#..#.#.~~~...~~~.#",
+   "#...........#...........#.~~~...~~~.#",
+   "#...........#...........#...........#",
+   "#.......................#...........#",
+   "#...........#...........#...........#",
+   "#...........#...........#.~~~...~~~.#",
+   "#...........#.#..#.#..#.#.~~~...~~~.#",
+   "#...........#...........#...........#",
+   "##################.###########.######",
+   "#...........#...........#...........#",
+   "#...........#.#.......#.#...........#",
+   "#...........#...........#...........#",
+   "#...........#...........#.....#.....#",
+   "#...................................#",
+   "#...........#...........#.....#.....#",
+   "#...........#...........#...........#",
+   "#...........#.#.......#.#...........#",
+   "#...........#...........#...........#",
+   "##################.##################"
+  ]
+ },
+ "entitiesByLayer": {
+  "ground": [
+   {
+    "extends": "mapBg",
+    "imagePath": "maps",
+    "texture": "d1"
+   }
+  ],
+  "walls": [
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 592,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 16,
+     "y": 480
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 192,
+     "y": 16
+    },
+    "scale": {
+     "x": 16,
+     "y": 224
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 384,
+     "y": 16
+    },
+    "scale": {
+     "x": 208,
+     "y": 160
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 32,
+     "y": 32
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 160,
+     "y": 32
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 32
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 32
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 32,
+     "y": 128
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 160,
+     "y": 128
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 128
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 128
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 16,
+     "y": 160
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 112,
+     "y": 160
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 208,
+     "y": 160
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 160
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 384,
+     "y": 176
+    },
+    "scale": {
+     "x": 16,
+     "y": 224
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 576,
+     "y": 176
+    },
+    "scale": {
+     "x": 16,
+     "y": 320
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 192
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 272,
+     "y": 192
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 192
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 192
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 192,
+     "y": 256
+    },
+    "scale": {
+     "x": 16,
+     "y": 144
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 288
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 272,
+     "y": 288
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 288
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 288
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 16,
+     "y": 320
+    },
+    "scale": {
+     "x": 176,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 208,
+     "y": 320
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 320
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 400,
+     "y": 320
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 496,
+     "y": 320
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 352
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 352
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 480,
+     "y": 384
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 192,
+     "y": 416
+    },
+    "scale": {
+     "x": 16,
+     "y": 80
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 384,
+     "y": 416
+    },
+    "scale": {
+     "x": 16,
+     "y": 80
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 480,
+     "y": 416
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 224,
+     "y": 448
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 352,
+     "y": 448
+    },
+    "scale": {
+     "x": 16,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 16,
+     "y": 480
+    },
+    "scale": {
+     "x": 176,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 208,
+     "y": 480
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 304,
+     "y": 480
+    },
+    "scale": {
+     "x": 80,
+     "y": 16
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 400,
+     "y": 480
+    },
+    "scale": {
+     "x": 176,
+     "y": 16
+    }
+   },
+   {
+    "extends": "water",
+    "position": {
+     "x": 416,
+     "y": 192
+    },
+    "scale": {
+     "x": 48,
+     "y": 32
+    }
+   },
+   {
+    "extends": "water",
+    "position": {
+     "x": 512,
+     "y": 192
+    },
+    "scale": {
+     "x": 48,
+     "y": 32
+    }
+   },
+   {
+    "extends": "water",
+    "position": {
+     "x": 416,
+     "y": 272
+    },
+    "scale": {
+     "x": 48,
+     "y": 32
+    }
+   },
+   {
+    "extends": "water",
+    "position": {
+     "x": 512,
+     "y": 272
+    },
+    "scale": {
+     "x": 48,
+     "y": 32
+    }
+   }
+  ],
+  "floor": [
+   {
+    "extends": "warp",
+    "position": {
+     "x": 296,
+     "y": 496
+    },
+    "components": {
+     "warp": {
+      "id": "entrance",
+      "level": "overworld",
+      "target": "d1",
+      "dir": "up"
+     }
+    }
+   }
+  ],
+  "objects": [
+   {
+    "extends": "slime",
+    "position": {
+     "x": 280,
+     "y": 400
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 312,
+     "y": 432
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 24,
+     "y": 352
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 184,
+     "y": 352
+    }
+   },
+   {
+    "extends": "bat",
+    "position": {
+     "x": 72,
+     "y": 384
+    }
+   },
+   {
+    "extends": "chest",
+    "position": {
+     "x": 104,
+     "y": 416
+    },
+    "components": {
+     "chest": {
+      "id": "d1:6,25",
+      "item": "key",
+      "amount": 1
+     }
+    }
+   },
+   {
+    "extends": "bat",
+    "position": {
+     "x": 136,
+     "y": 448
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 24,
+     "y": 480
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 184,
+     "y": 480
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 440,
+     "y": 368
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 536,
+     "y": 368
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 456,
+     "y": 416
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 520,
+     "y": 416
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 440,
+     "y": 464
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 536,
+     "y": 464
+    },
+    "components": {
+     "enemy": {
+      "group": "a"
+     }
+    }
+   },
+   {
+    "extends": "bat",
+    "position": {
+     "x": 472,
+     "y": 240
+    }
+   },
+   {
+    "extends": "bat",
+    "position": {
+     "x": 504,
+     "y": 240
+    }
+   },
+   {
+    "extends": "chest",
+    "position": {
+     "x": 488,
+     "y": 256
+    },
+    "components": {
+     "chest": {
+      "id": "d1:30,15",
+      "item": "rupees",
+      "amount": 50
+     }
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 248,
+     "y": 240
+    }
+   },
+   {
+    "extends": "slime",
+    "position": {
+     "x": 344,
+     "y": 240
+    }
+   },
+   {
+    "extends": "skeleton",
+    "position": {
+     "x": 280,
+     "y": 288
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 216,
+     "y": 320
+    }
+   },
+   {
+    "extends": "pot",
+    "position": {
+     "x": 376,
+     "y": 320
+    }
+   },
+   {
+    "extends": "eye",
+    "position": {
+     "x": 72,
+     "y": 192
+    },
+    "components": {
+     "switch": {
+      "id": "d1:4,11",
+      "group": "b"
+     }
+    }
+   },
+   {
+    "extends": "skeleton",
+    "position": {
+     "x": 56,
+     "y": 224
+    }
+   },
+   {
+    "extends": "skeleton",
+    "position": {
+     "x": 168,
+     "y": 224
+    }
+   },
+   {
+    "extends": "chest",
+    "position": {
+     "x": 104,
+     "y": 256
+    },
+    "components": {
+     "chest": {
+      "id": "d1:6,15",
+      "item": "bow",
+      "amount": 1
+     }
+    }
+   },
+   {
+    "extends": "skeleton",
+    "position": {
+     "x": 56,
+     "y": 64
+    }
+   },
+   {
+    "extends": "skeleton",
+    "position": {
+     "x": 168,
+     "y": 64
+    }
+   },
+   {
+    "extends": "chest",
+    "position": {
+     "x": 104,
+     "y": 96
+    },
+    "components": {
+     "chest": {
+      "id": "d1:6,5",
+      "item": "bossKey",
+      "amount": 1
+     }
+    }
+   },
+   {
+    "extends": "kingSlime",
+    "position": {
+     "x": 296,
+     "y": 96
+    }
+   },
+   {
+    "extends": "lockedDoor",
+    "position": {
+     "x": 296,
+     "y": 336
+    },
+    "components": {
+     "door": {
+      "id": "d1:18,20"
+     }
+    },
+    "color": "#c9d6a8"
+   },
+   {
+    "extends": "gate",
+    "position": {
+     "x": 488,
+     "y": 336
+    },
+    "components": {
+     "gate": {
+      "id": "d1:30,20",
+      "group": "a"
+     }
+    },
+    "color": "#c9d6a8"
+   },
+   {
+    "extends": "gate",
+    "position": {
+     "x": 104,
+     "y": 176
+    },
+    "components": {
+     "gate": {
+      "id": "d1:6,10",
+      "group": "b"
+     }
+    },
+    "color": "#c9d6a8"
+   },
+   {
+    "extends": "bossDoor",
+    "position": {
+     "x": 296,
+     "y": 176
+    },
+    "components": {
+     "door": {
+      "id": "d1:18,10",
+      "boss": true
+     }
+    }
+   }
+  ]
+ }
+}

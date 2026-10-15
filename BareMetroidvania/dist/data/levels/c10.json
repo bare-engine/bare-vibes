@@ -1,0 +1,192 @@
+{
+ "name": "c10",
+ "dimensions": {
+  "width": 640,
+  "height": 192
+ },
+ "backgroundColor": "#1c1215",
+ "customData": {
+  "room": "c10"
+ },
+ "entitiesByLayer": {
+  "background": [
+   {
+    "extends": "backWall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 12
+    },
+    "color": "#3a272c"
+   },
+   {
+    "extends": "window",
+    "position": {
+     "x": 224,
+     "y": 112
+    }
+   },
+   {
+    "extends": "banner",
+    "position": {
+     "x": 480,
+     "y": 96
+    }
+   },
+   {
+    "extends": "banner",
+    "position": {
+     "x": 368,
+     "y": 96
+    }
+   }
+  ],
+  "objects": [
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 152,
+     "y": 104
+    }
+   },
+   {
+    "extends": "spider",
+    "position": {
+     "x": 120,
+     "y": 176
+    }
+   },
+   {
+    "extends": "rat",
+    "position": {
+     "x": 552,
+     "y": 176
+    }
+   },
+   {
+    "extends": "ghost",
+    "position": {
+     "x": 408,
+     "y": 88
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "scale": {
+     "x": 40,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 624,
+     "y": 16
+    },
+    "scale": {
+     "x": 1,
+     "y": 7
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "plank",
+    "position": {
+     "x": 192,
+     "y": 80
+    },
+    "scale": {
+     "x": 3,
+     "y": 1
+    }
+   },
+   {
+    "extends": "spikes",
+    "position": {
+     "x": 160,
+     "y": 160
+    },
+    "scale": {
+     "x": 2,
+     "y": 1
+    }
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 0,
+     "y": 176
+    },
+    "scale": {
+     "x": 28,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "cracked",
+    "position": {
+     "x": 448,
+     "y": 176
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "cracked",
+    "position": {
+     "x": 464,
+     "y": 176
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "cracked",
+    "position": {
+     "x": 480,
+     "y": 176
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "cracked",
+    "position": {
+     "x": 496,
+     "y": 176
+    },
+    "color": "#d9b49c"
+   },
+   {
+    "extends": "wall",
+    "position": {
+     "x": 512,
+     "y": 176
+    },
+    "scale": {
+     "x": 8,
+     "y": 1
+    },
+    "color": "#d9b49c"
+   }
+  ]
+ }
+}

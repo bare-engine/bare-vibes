@@ -1,0 +1,896 @@
+{
+  "frames": {
+    "tribune_overhang_red": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 448,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 448,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 448,
+        "h": 144
+      }
+    },
+    "tribune_full": {
+      "frame": {
+        "x": 2,
+        "y": 148,
+        "w": 448,
+        "h": 223
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 448,
+        "h": 223
+      },
+      "sourceSize": {
+        "w": 448,
+        "h": 223
+      }
+    },
+    "tree_small": {
+      "frame": {
+        "x": 2,
+        "y": 373,
+        "w": 141,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 141,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 141,
+        "h": 141
+      }
+    },
+    "tree_large": {
+      "frame": {
+        "x": 452,
+        "y": 2,
+        "w": 214,
+        "h": 212
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 214,
+        "h": 212
+      },
+      "sourceSize": {
+        "w": 214,
+        "h": 212
+      }
+    },
+    "tires_white": {
+      "frame": {
+        "x": 145,
+        "y": 373,
+        "w": 56,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 56
+      }
+    },
+    "tires_red_alt": {
+      "frame": {
+        "x": 145,
+        "y": 431,
+        "w": 56,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 56
+      }
+    },
+    "tires_red": {
+      "frame": {
+        "x": 203,
+        "y": 373,
+        "w": 56,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 56
+      }
+    },
+    "tent_red_large": {
+      "frame": {
+        "x": 2,
+        "y": 516,
+        "w": 256,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "tent_red": {
+      "frame": {
+        "x": 452,
+        "y": 216,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "tent_blue_large": {
+      "frame": {
+        "x": 260,
+        "y": 431,
+        "w": 256,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "tent_blue": {
+      "frame": {
+        "x": 518,
+        "y": 346,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "skidmark_short_1": {
+      "frame": {
+        "x": 452,
+        "y": 346,
+        "w": 60,
+        "h": 16
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 16
+      }
+    },
+    "rock2": {
+      "frame": {
+        "x": 582,
+        "y": 216,
+        "w": 73,
+        "h": 68
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 73,
+        "h": 68
+      },
+      "sourceSize": {
+        "w": 73,
+        "h": 68
+      }
+    },
+    "rock1": {
+      "frame": {
+        "x": 260,
+        "y": 689,
+        "w": 89,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 89,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 89,
+        "h": 72
+      }
+    },
+    "road_asphalt43": {
+      "frame": {
+        "x": 518,
+        "y": 476,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt42": {
+      "frame": {
+        "x": 518,
+        "y": 606,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt41": {
+      "frame": {
+        "x": 668,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt39": {
+      "frame": {
+        "x": 668,
+        "y": 132,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt05": {
+      "frame": {
+        "x": 657,
+        "y": 262,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt03": {
+      "frame": {
+        "x": 648,
+        "y": 392,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt02": {
+      "frame": {
+        "x": 648,
+        "y": 522,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "road_asphalt01": {
+      "frame": {
+        "x": 2,
+        "y": 774,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "oil": {
+      "frame": {
+        "x": 132,
+        "y": 774,
+        "w": 109,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 95
+      }
+    },
+    "lights": {
+      "frame": {
+        "x": 351,
+        "y": 689,
+        "w": 160,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 64
+      }
+    },
+    "land_grass11": {
+      "frame": {
+        "x": 243,
+        "y": 774,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "land_grass04": {
+      "frame": {
+        "x": 373,
+        "y": 755,
+        "w": 128,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 128
+      }
+    },
+    "cone_straight": {
+      "frame": {
+        "x": 203,
+        "y": 431,
+        "w": 45,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 44
+      }
+    },
+    "cone_down": {
+      "frame": {
+        "x": 261,
+        "y": 373,
+        "w": 46,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 46,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 46,
+        "h": 44
+      }
+    },
+    "car_yellow_small_3": {
+      "frame": {
+        "x": 503,
+        "y": 755,
+        "w": 39,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 39,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 39,
+        "h": 70
+      }
+    },
+    "car_yellow_small_1": {
+      "frame": {
+        "x": 503,
+        "y": 827,
+        "w": 40,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 70
+      }
+    },
+    "car_red_small_3": {
+      "frame": {
+        "x": 544,
+        "y": 736,
+        "w": 39,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 39,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 39,
+        "h": 70
+      }
+    },
+    "car_red_small_1": {
+      "frame": {
+        "x": 545,
+        "y": 808,
+        "w": 40,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 70
+      }
+    },
+    "car_green_small_3": {
+      "frame": {
+        "x": 585,
+        "y": 736,
+        "w": 39,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 39,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 39,
+        "h": 70
+      }
+    },
+    "car_green_small_1": {
+      "frame": {
+        "x": 587,
+        "y": 808,
+        "w": 40,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 70
+      }
+    },
+    "car_blue_small_3": {
+      "frame": {
+        "x": 626,
+        "y": 736,
+        "w": 39,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 39,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 39,
+        "h": 70
+      }
+    },
+    "car_blue_small_1": {
+      "frame": {
+        "x": 648,
+        "y": 652,
+        "w": 40,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 70
+      }
+    },
+    "car_black_small_3": {
+      "frame": {
+        "x": 629,
+        "y": 808,
+        "w": 39,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 39,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 39,
+        "h": 70
+      }
+    },
+    "car_black_small_1": {
+      "frame": {
+        "x": 667,
+        "y": 724,
+        "w": 40,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 70
+      }
+    },
+    "barrier_white_race": {
+      "frame": {
+        "x": 798,
+        "y": 2,
+        "w": 210,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 210,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 210,
+        "h": 62
+      }
+    },
+    "barrier_red_race": {
+      "frame": {
+        "x": 798,
+        "y": 66,
+        "w": 210,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 210,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 210,
+        "h": 62
+      }
+    },
+    "barrel_red": {
+      "frame": {
+        "x": 309,
+        "y": 373,
+        "w": 56,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 56
+      }
+    },
+    "barrel_blue": {
+      "frame": {
+        "x": 367,
+        "y": 373,
+        "w": 56,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 56
+      }
+    }
+  },
+  "animations": {
+    "car_black_small": [
+      "car_black_small_1",
+      "car_black_small_3"
+    ],
+    "car_blue_small": [
+      "car_blue_small_1",
+      "car_blue_small_3"
+    ],
+    "car_green_small": [
+      "car_green_small_1",
+      "car_green_small_3"
+    ],
+    "car_red_small": [
+      "car_red_small_1",
+      "car_red_small_3"
+    ],
+    "car_yellow_small": [
+      "car_yellow_small_1",
+      "car_yellow_small_3"
+    ],
+    "land_grass": [
+      "land_grass04",
+      "land_grass11"
+    ],
+    "road_asphalt": [
+      "road_asphalt01",
+      "road_asphalt02",
+      "road_asphalt03",
+      "road_asphalt05",
+      "road_asphalt39",
+      "road_asphalt41",
+      "road_asphalt42",
+      "road_asphalt43"
+    ],
+    "rock": [
+      "rock1",
+      "rock2"
+    ]
+  },
+  "meta": {
+    "app": "http://github.com/pixijs/assetpack",
+    "version": "1.0",
+    "image": "texturePackImages.webp",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1010,
+      "h": 904
+    },
+    "scale": 1,
+    "related_multi_packs": []
+  }
+}

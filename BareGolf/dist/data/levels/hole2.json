@@ -1,0 +1,98 @@
+{
+  "name": "hole2",
+  "dimensions": {
+    "width": 624,
+    "height": 528
+  },
+  "customData": {
+    "par": 3
+  },
+  "entitiesByLayer": {
+    "background": [
+      {
+        "extends": "grass",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 39,
+          "y": 33
+        }
+      }
+    ],
+    "ground": [
+      {
+        "extends": "hole",
+        "position": {
+          "x": 516,
+          "y": 444
+        }
+      }
+    ],
+    "objects": [
+      {
+        "extends": "wall",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 104,
+          "y": 4
+        }
+      },
+      {
+        "extends": "wall",
+        "position": {
+          "x": 0,
+          "y": 504
+        },
+        "scale": {
+          "x": 104,
+          "y": 4
+        }
+      },
+      {
+        "extends": "wall",
+        "position": {
+          "x": 0,
+          "y": 24
+        },
+        "scale": {
+          "x": 4,
+          "y": 80
+        }
+      },
+      {
+        "extends": "wall",
+        "position": {
+          "x": 600,
+          "y": 24
+        },
+        "scale": {
+          "x": 4,
+          "y": 80
+        }
+      },
+      {
+        "extends": "wall",
+        "position": {
+          "x": 24,
+          "y": 192
+        },
+        "scale": {
+          "x": 68,
+          "y": 52
+        }
+      },
+      {
+        "extends": "ball",
+        "position": {
+          "x": 84,
+          "y": 108
+        }
+      }
+    ]
+  }
+}

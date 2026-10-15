@@ -130,10 +130,22 @@ export class Game extends Scene
         if (keyboard.IsKeyPressed('2')) this.spawner.SpawnBurst(500);
         if (keyboard.IsKeyPressed('3')) this.spawner.SpawnBurst(2000);
         if (keyboard.IsKeyPressed('k')) this.ClearEnemies();
-        if (keyboard.IsKeyPressed('g')) this.godMode = !this.godMode;
+        if (keyboard.IsKeyPressed('g'))
+        {
+            this.godMode = !this.godMode;
+            this.hud?.Announce(`God mode ${this.godMode ? 'on' : 'off'}`);
+        }
         if (keyboard.IsKeyPressed('u')) this.playerComp.AddXp(this.playerComp.xpToNext - this.playerComp.xp);
-        if (keyboard.IsKeyPressed('f')) this.spawner.enabled = !this.spawner.enabled;
-        if (keyboard.IsKeyPressed('v')) this.ToggleDecor();
+        if (keyboard.IsKeyPressed('f'))
+        {
+            this.spawner.enabled = !this.spawner.enabled;
+            this.hud?.Announce(`Spawner ${this.spawner.enabled ? 'on' : 'off'}`);
+        }
+        if (keyboard.IsKeyPressed('v'))
+        {
+            this.ToggleDecor();
+            this.hud?.Announce(`Decor ${this.decorShown ? 'on' : 'off'}`);
+        }
         if (keyboard.IsKeyPressed('b')) this.RunBenchmark();
     }
 

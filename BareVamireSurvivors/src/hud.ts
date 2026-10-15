@@ -2,7 +2,6 @@ import { Button, Color, Easing, GameObject, Scene, TextObject, TweenTo, Vec2 } f
 import { Asset } from './generated/assets';
 import type { Game } from './game';
 import { Benchmark, type BenchRow } from './systems/benchmark';
-import { perf } from './systems/perfMonitor';
 import type { Upgrade } from './upgrades';
 
 export type HudPayload = { game: Game };
@@ -12,15 +11,37 @@ const FONT = 'monospace';
 const QUAD_CORNERS = [[0, 0], [1, 0], [1, 1], [0, 0], [1, 1], [0, 1]];
 const WHITE = '#ffffff';
 
-const HELP = [
-    'WASD / arrows / hold mouse: move     mouse: aim knives',
-    'wheel, - =: zoom   0: reset zoom   Z: overview   Esc: pause',
-    'M: collision mode   B: benchmark   1/2/3: +100/+500/+2000 enemies',
-    'K: kill all   G: god mode   U: level up   F: freeze spawner   V: decor on/off',
-    'N: minimap   H: hide this help',
-].join('\n');
+const HELP = FormatHelp([
+    ['WASD/arrows', 'move'], ['hold mouse', 'move'], ['mouse', 'aim knives'],
+    ['wheel - =', 'zoom'], ['0', 'reset zoom'], ['Z', 'overview'],
+    ['Esc', 'pause'], ['M', 'collision mode'], ['B', 'benchmark'],
+    ['1/2/3', '+100/+500/+2000 enemies'], ['K', 'kill all'], ['G', 'god mode'],
+    ['U', 'level up'], ['F', 'freeze spawner'], ['V', 'decor on/off'],
+    ['N', 'minimap'], ['H', 'hide this help'], ['F2', 'engine stats'],
+], 3);
 
-// Screen-space UI on top of the game: bars, counters, perf stats, menus.
+// Lays [key, action] pairs out in columns; the font is monospace, so padding lines them up
+function FormatHelp(entries: [string, string][], columns: number): string
+{
+    const keyWidths: number[] = [];
+    const cellWidths: number[] = [];
+    entries.forEach(([key, action], i) => {
+        const column = i % columns;
+        keyWidths[column] = Math.max(keyWidths[column] ?? 0, key.length);
+        cellWidths[column] = Math.max(cellWidths[column] ?? 0, action.length);
+    });
+
+    const lines: string[] = [];
+    for (let i = 0; i < entries.length; i += columns)
+    {
+        const cells = entries.slice(i, i + columns).map(([key, action], column) =>
+            `${key.padStart(keyWidths[column])}  ${action.padEnd(cellWidths[column])}`);
+        lines.push(cells.join('    ').trimEnd());
+    }
+    return lines.join('\n');
+}
+
+// Screen-space UI on top of the game: bars, counters, menus.
 // Reads the game's camera to point at bosses that are off screen.
 export class Hud extends Scene
 {
@@ -29,7 +50,6 @@ export class Hud extends Scene
     private levelText!: TextObject;
     private timeText!: TextObject;
     private killsText!: TextObject;
-    private perfText!: TextObject;
     private helpText!: TextObject;
     private announceText!: TextObject;
     private centerText!: TextObject;
@@ -38,7 +58,6 @@ export class Hud extends Scene
     private bossArrows: GameObject[] = [];
     private showMinimap = false;
     private textTimer = 0;
-    private graphPoints: Vec2[] = [];
     private mapPoints: Vec2[] = [];
     private mapColors: Color[] = [];
     // Frame in which a menu closed: its key press must not also reach the game
@@ -49,8 +68,6 @@ export class Hud extends Scene
     private static readonly xpBack = Color.fromHex('#1b1b2b');
     private static readonly xpFill = Color.fromHex('#3fa9ff');
     private static readonly panel = Color.fromHex('#000000a0');
-    private static readonly graphLine = Color.fromHex('#7dff7a');
-    private static readonly graphBudget = Color.fromHex('#ffffff40');
     private static readonly mapEnemy = Color.fromHex('#ff5a5a');
     private static readonly mapBoss = Color.fromHex('#ffd23a');
     private static readonly mapPlayer = Color.fromHex('#3fa9ff');
@@ -71,9 +88,10 @@ export class Hud extends Scene
         this.levelText = this.AddText('LV 1', 22, 0, 0);
         this.timeText = this.AddText('00:00', 30, 0.5, 0);
         this.killsText = this.AddText('0 kills', 22, 1, 0);
-        this.perfText = this.AddText('', 14, 0, 0);
         this.helpText = this.AddText(HELP, 13, 0, 1);
         this.helpText.alpha = 0.8;
+        this.helpText.strokeThickness = 5.5;
+        this.helpText.lineHeight = 1.3;
         this.announceText = this.AddText('', 34, 0.5, 0.5);
         this.announceText.alpha = 0;
         this.centerText = this.AddText('', 48, 0.5, 0.5);
@@ -93,7 +111,6 @@ export class Hud extends Scene
         this.levelText.SetPosition(12, 18);
         this.timeText.SetPosition(w / 2, 16);
         this.killsText.SetPosition(w - 12, 18);
-        this.perfText.SetPosition(12, 50);
         this.helpText.SetPosition(12, h - 10);
         this.announceText.SetPosition(w / 2, h * 0.25);
         this.centerText.SetPosition(w / 2, h * 0.4);
@@ -154,20 +171,6 @@ export class Hud extends Scene
         SetTextIfChanged(this.levelText, `LV ${player.level}   HP ${Math.ceil(player.hp)}/${game.playerStats.maxHp}`);
         SetTextIfChanged(this.timeText, `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`);
         SetTextIfChanged(this.killsText, `${game.kills} kills`);
-
-        const p = perf.display;
-        const flags = [game.godMode ? 'GOD' : '', game.spawner.enabled ? '' : 'SPAWN OFF', game.decorShown ? '' : 'NO DECOR']
-            .filter(Boolean).join(' ');
-        const lines = [
-            `${p.fps.toFixed(0).padStart(3)} fps  ${p.frameMs.toFixed(1)}ms (p95 ${p.p95Ms.toFixed(1)}, worst ${p.worstMs.toFixed(0)})`,
-            `fixed ${p.fixedMs.toFixed(2)}ms x${p.steps.toFixed(1)}  physics ${p.physicsMs.toFixed(2)}ms`,
-            `update ${p.updateMs.toFixed(2)}ms  render ${p.renderMs.toFixed(2)}ms  ${p.drawCalls.toFixed(0)} draws`,
-            `enemies ${game.enemies.length}  projectiles ${game.projectiles.length}  pickups ${game.pickups.length}`,
-            `objects ${game.object.GetAll().length}  heap ${p.heapMB.toFixed(0)}MB`,
-            `collisions: ${game.combat.mode.toUpperCase()}  zoom ${game.camera.GetZoom().toFixed(2)} ${flags}`,
-            game.bench.status,
-        ];
-        SetTextIfChanged(this.perfText, lines.join('\n'));
     }
 
     override OnRender()
@@ -180,36 +183,10 @@ export class Hud extends Scene
         rapid.drawRect({ position: new Vec2(0, 0), width: w, height: 10, color: Hud.xpBack });
         rapid.drawRect({ position: new Vec2(0, 0), width: w * Math.min(1, player.xp / player.xpToNext), height: 10, color: Hud.xpFill });
 
-        this.DrawFrameGraph();
         this.UpdateBossArrows();
 
         if (this.showMinimap)
             this.DrawMinimap();
-    }
-
-    // Frame times of the last 240 frames; the faint line is 16.7ms (60 fps)
-    private DrawFrameGraph()
-    {
-        const history = perf.history;
-        const x0 = 12;
-        const y0 = 190;
-        const width = 240;
-        const height = 50;
-        const msToPixels = height / 50;
-
-        rapid.drawRect({ position: new Vec2(x0, y0 - height), width, height, color: Hud.panel });
-        rapid.drawRect({ position: new Vec2(x0, y0 - 16.7 * msToPixels), width, height: 1, color: Hud.graphBudget });
-
-        if (this.graphPoints.length !== history.length)
-            this.graphPoints = Array.from(history, () => new Vec2());
-
-        for (let i = 0; i < history.length; i++)
-        {
-            const value = history[(perf.historyIndex + i) % history.length];
-            this.graphPoints[i].set(x0 + i * width / history.length, y0 - Math.min(height, value * msToPixels));
-        }
-
-        rapid.drawLine({ points: this.graphPoints, width: 1.5, color: Hud.graphLine });
     }
 
     // Arrows at the screen's edge pointing at bosses outside the view.

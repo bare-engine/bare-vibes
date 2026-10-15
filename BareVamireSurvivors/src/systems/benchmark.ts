@@ -22,7 +22,6 @@ declare global
 export class Benchmark
 {
     running = false;
-    status = '';
     results: BenchRow[] = [];
 
     static readonly COUNTS = [250, 500, 1000, 2000, 3000, 4000, 6000, 8000];
@@ -67,7 +66,7 @@ export class Benchmark
 
                 for (const count of Benchmark.COUNTS)
                 {
-                    this.status = `Benchmark (${mode}): ${count} enemies`;
+                    game.hud?.Announce(`Benchmark (${mode}): ${count} enemies`);
 
                     const toSpawn = count - game.enemies.length;
                     const t0 = performance.now();
@@ -104,7 +103,8 @@ export class Benchmark
             game.spawner.enabled = saved.spawner;
             game.autopilot = saved.autopilot;
             this.running = false;
-            this.status = completed ? 'Benchmark done, results in the console' : 'Benchmark cancelled';
+            if (!completed)
+                game.hud?.Announce('Benchmark cancelled');
         }
 
         window.benchResults = this.results;

@@ -81,6 +81,14 @@ Box-pushing puzzles with undo.
 Snake, with a smooth bendy body.
 </td>
 </tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareTrust/dist/"><img src="screenshots/trust.png" alt="Bare Trust"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareTrust/dist/">Bare Trust</a></b><br>
+A simplified port of The Evolution of Trust: cooperate or cheat at the coin machine.
+</td>
+<td width="50%"></td>
+</tr>
 </table>
 
 ## Running locally

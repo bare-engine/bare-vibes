@@ -8,14 +8,80 @@ Bare is designed to be easy and intuitive for developers, but it's also a good f
 
 Click a screenshot to play the built version.
 
-| | |
-| :---: | :---: |
-| [![BareFactorio](screenshots/factorio.png)](https://bare-engine.github.io/bare-vibes/BareFactorio/dist/)<br>**[BareFactorio](https://bare-engine.github.io/bare-vibes/BareFactorio/dist/)**<br>A colony and automation sim with colonists, drills and conveyor belts. | [![Bare Vampire Survivors](screenshots/vampiresurvivors.png)](https://bare-engine.github.io/bare-vibes/BareVamireSurvivors/dist/)<br>**[Bare Vampire Survivors](https://bare-engine.github.io/bare-vibes/BareVamireSurvivors/dist/)**<br>A Vampire Survivors-style game that stress-tests rendering and physics. |
-| [![Tower Defense](screenshots/towerdefense.png)](https://bare-engine.github.io/bare-vibes/BareTowerDefense/dist/)<br>**[Tower Defense](https://bare-engine.github.io/bare-vibes/BareTowerDefense/dist/)**<br>Build archer, cannon and frost towers to hold off the waves. | [![BareRace](screenshots/race.png)](https://bare-engine.github.io/bare-vibes/BareRace/dist/)<br>**[BareRace](https://bare-engine.github.io/bare-vibes/BareRace/dist/)**<br>A top-down racer against four AI drivers. |
-| [![Tetris](screenshots/tetris.png)](https://bare-engine.github.io/bare-vibes/BareTetris/dist/)<br>**[Tetris](https://bare-engine.github.io/bare-vibes/BareTetris/dist/)**<br>Tetris with hold, next queue and hard drop. | [![BareGolf](screenshots/golf.png)](https://bare-engine.github.io/bare-vibes/BareGolf/dist/)<br>**[BareGolf](https://bare-engine.github.io/bare-vibes/BareGolf/dist/)**<br>Six holes of drag-and-shoot mini golf. |
-| [![Castle of the Cyclops King](screenshots/metroidvania.png)](https://bare-engine.github.io/bare-vibes/BareMetroidvania/dist/)<br>**[Castle of the Cyclops King](https://bare-engine.github.io/bare-vibes/BareMetroidvania/dist/)**<br>A metroidvania: 52 rooms, ability gates, a map and a boss. | [![Sigil Quest](screenshots/zelda.png)](https://bare-engine.github.io/bare-vibes/BareZelda/dist/)<br>**[Sigil Quest](https://bare-engine.github.io/bare-vibes/BareZelda/dist/)**<br>A top-down action RPG in the style of early Zelda, with five dungeons. |
-| [![Red Remover](screenshots/redremover.png)](https://bare-engine.github.io/bare-vibes/BareRedRemover/dist/)<br>**[Red Remover](https://bare-engine.github.io/bare-vibes/BareRedRemover/dist/)**<br>A physics puzzler remake of the Flash game: remove the red shapes, keep the green. | [![Flipside](screenshots/jumper.png)](https://bare-engine.github.io/bare-vibes/BareJumper/dist/)<br>**[Flipside](https://bare-engine.github.io/bare-vibes/BareJumper/dist/)**<br>A one-button gravity-flip runner with ghost replays of your best run. |
-| [![Sokoban](screenshots/sokoban.png)](https://bare-engine.github.io/bare-vibes/BareSokoban/dist/)<br>**[Sokoban](https://bare-engine.github.io/bare-vibes/BareSokoban/dist/)**<br>Box-pushing puzzles with undo. | [![BareSnake](screenshots/snake.png)](https://bare-engine.github.io/bare-vibes/BareSnake/dist/)<br>**[BareSnake](https://bare-engine.github.io/bare-vibes/BareSnake/dist/)**<br>Snake, with a smooth bendy body. |
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareFactorio/dist/"><img src="screenshots/factorio.png" alt="BareFactorio"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareFactorio/dist/">BareFactorio</a></b><br>
+A colony and automation sim with colonists, drills and conveyor belts.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareVamireSurvivors/dist/"><img src="screenshots/vampiresurvivors.png" alt="Bare Vampire Survivors"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareVamireSurvivors/dist/">Bare Vampire Survivors</a></b><br>
+A Vampire Survivors-style game that stress-tests rendering and physics.
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareTowerDefense/dist/"><img src="screenshots/towerdefense.png" alt="Tower Defense"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareTowerDefense/dist/">Tower Defense</a></b><br>
+Build archer, cannon and frost towers to hold off the waves.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareRace/dist/"><img src="screenshots/race.png" alt="BareRace"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareRace/dist/">BareRace</a></b><br>
+A top-down racer against four AI drivers.
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareTetris/dist/"><img src="screenshots/tetris.png" alt="Tetris"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareTetris/dist/">Tetris</a></b><br>
+Tetris with hold, next queue and hard drop.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareGolf/dist/"><img src="screenshots/golf.png" alt="BareGolf"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareGolf/dist/">BareGolf</a></b><br>
+Six holes of drag-and-shoot mini golf.
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareMetroidvania/dist/"><img src="screenshots/metroidvania.png" alt="Castle of the Cyclops King"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareMetroidvania/dist/">Castle of the Cyclops King</a></b><br>
+A metroidvania: 52 rooms, ability gates, a map and a boss.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareZelda/dist/"><img src="screenshots/zelda.png" alt="Sigil Quest"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareZelda/dist/">Sigil Quest</a></b><br>
+A top-down action RPG in the style of early Zelda, with five dungeons.
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareRedRemover/dist/"><img src="screenshots/redremover.png" alt="Red Remover"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareRedRemover/dist/">Red Remover</a></b><br>
+A physics puzzler remake of the Flash game: remove the red shapes, keep the green.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareJumper/dist/"><img src="screenshots/jumper.png" alt="Flipside"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareJumper/dist/">Flipside</a></b><br>
+A one-button gravity-flip runner with ghost replays of your best run.
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareSokoban/dist/"><img src="screenshots/sokoban.png" alt="Sokoban"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareSokoban/dist/">Sokoban</a></b><br>
+Box-pushing puzzles with undo.
+</td>
+<td align="center" width="50%">
+<a href="https://bare-engine.github.io/bare-vibes/BareSnake/dist/"><img src="screenshots/snake.png" alt="BareSnake"></a><br>
+<b><a href="https://bare-engine.github.io/bare-vibes/BareSnake/dist/">BareSnake</a></b><br>
+Snake, with a smooth bendy body.
+</td>
+</tr>
+</table>
 
 ## Running locally
 

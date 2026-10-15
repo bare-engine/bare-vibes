@@ -1,3 +1,6 @@
 FRICTION.md
 ENGINE_NOTES.md
 ENGINE-FRICTION.md
+
+# Built and deployed by .github/workflows/pages.yml
+*/dist/

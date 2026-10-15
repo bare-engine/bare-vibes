@@ -1,0 +1,105 @@
+name: Build and deploy games
+
+# On every push to main, build every game and publish them to
+# https://bare-engine.github.io/bare-vibes/<Game>/dist/, the links in the README.
+# Builds are cached by a hash of the game's folder, so only games that changed are rebuilt.
+# Requires Settings > Pages > Source set to "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  games:
+    runs-on: ubuntu-latest
+    outputs:
+      list: ${{ steps.list.outputs.list }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # Every folder with a package.json, as a JSON array for the matrix
+      - id: list
+        shell: bash
+        run: |
+          games=()
+          for d in */; do
+            if [ -f "$d/package.json" ]; then games+=("${d%/}"); fi
+          done
+          list=$(printf '%s\n' "${games[@]}" | jq -R . | jq -sc .)
+          echo "Games: $list"
+          echo "list=$list" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: games
+    runs-on: ubuntu-latest
+    strategy:
+      # Let every game finish, so one run shows all broken builds
+      fail-fast: false
+      matrix:
+        game: ${{ fromJson(needs.games.outputs.list) }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # Hashed before anything is installed or built, so it covers only the committed files
+      - id: cache
+        uses: actions/cache@v5
+        with:
+          path: ${{ matrix.game }}/dist
+          key: dist-${{ matrix.game }}-${{ hashFiles(format('{0}/**', matrix.game)) }}
+
+      - uses: actions/setup-node@v5
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ matrix.game }}/package-lock.json
+
+      - name: Build
+        if: steps.cache.outputs.cache-hit != 'true'
+        working-directory: ${{ matrix.game }}
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
+      # Staged as <game>/dist so the deploy job can merge all games into one site
+      - name: Stage
+        shell: bash
+        run: |
+          mkdir -p "_site/${{ matrix.game }}"
+          cp -r "${{ matrix.game }}/dist" "_site/${{ matrix.game }}/dist"
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: site-${{ matrix.game }}
+          path: _site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          pattern: site-*
+          merge-multiple: true
+          path: _site
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v5
